@@ -15,7 +15,7 @@ export function Hero() {
               <br />
               <span className="text-blue-700">There is one!</span>
             </h1>
-            <p className="mb-12">
+            <p className="mb-12 xl:mr-32">
               <b>Code for Moldova</b> este o asociație obștească apolitică, neguvernamentală și non-profit. Prima
               Asociație
               Civic-Tech din Moldova, care vine să soluționeze probleme societății prin soft-uri și platforme.
