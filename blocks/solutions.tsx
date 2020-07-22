@@ -1,9 +1,13 @@
 import React from 'react'
+import { Container } from '../components/container'
+import { Row } from '../components/row'
+import { Column } from '../components/column'
 
 export function Solutions() {
   return (
     <section className="bg-gray-100 py-5 md:py-16">
-      <div className="container px-3 mx-auto">
+      <Container>
+
         <div className="flex justify-between items-center mb-5 md:mb-10">
           <h1 className="text-3xl" style={{ fontFamily: 'Space Mono' }}>
             Soluții IT
@@ -13,9 +17,8 @@ export function Solutions() {
           </button>
         </div>
 
-        <div className="flex flex-wrap -mx-3">
-
-          <div className="px-3 mb-4 w-full md:w-1/3">
+        <Row>
+          <Column className="mb-4 w-full md:w-1/3">
             <div className="bg-white h-full">
               <div className="relative" style={{ paddingBottom: '75%' }}>
                 <img
@@ -45,9 +48,8 @@ export function Solutions() {
                 </p>
               </div>
             </div>
-          </div>
-
-          <div className="px-3 mb-4 w-full md:w-1/3">
+          </Column>
+          <Column className="mb-4 w-full md:w-1/3">
             <div className="bg-white h-full">
               <div className="relative" style={{ paddingBottom: '75%' }}>
                 <img
@@ -73,9 +75,8 @@ export function Solutions() {
                 </p>
               </div>
             </div>
-          </div>
-
-          <div className="px-3 mb-4 w-full md:w-1/3">
+          </Column>
+          <Column className="mb-4 w-full md:w-1/3">
             <div className="bg-white h-full">
               <div className="relative" style={{ paddingBottom: '75%' }}>
                 <img
@@ -104,10 +105,9 @@ export function Solutions() {
                 </p>
               </div>
             </div>
-          </div>
-
-        </div>
-      </div>
+          </Column>
+        </Row>
+      </Container>
     </section>
   )
 }

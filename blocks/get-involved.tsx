@@ -1,16 +1,19 @@
 import React from 'react'
+import { Container } from '../components/container'
+import { Row } from '../components/row'
+import { Column } from '../components/column'
 
 export function GetInvolved() {
   return (
     <section className="py-5 md:py-16">
-      <div className="container px-3 mx-auto">
+      <Container>
+
         <h1 className="text-3xl mb-5 md:mb-10" style={{ fontFamily: 'Space Mono' }}>
           Implică-te
         </h1>
 
-        <div className="flex flex-wrap -mx-3">
-
-          <div className="px-3 mb-4 w-full md:w-1/3">
+        <Row>
+          <Column className="mb-4 w-full md:w-1/3">
             <div className="border-4 border-blue-500 p-8 h-full">
               <div className="flex flex-col lg:flex-row items-center mb-6">
                 <img
@@ -26,9 +29,8 @@ export function GetInvolved() {
                 aplicațiilor civice, ce vor face Moldova țara pe care ni-o dorim cu toții!
               </p>
             </div>
-          </div>
-
-          <div className="px-3 mb-4 w-full md:w-1/3">
+          </Column>
+          <Column className="mb-4 w-full md:w-1/3">
             <div className="border-4 border-indigo-700 p-8 h-full">
               <div className="flex flex-col lg:flex-row items-center mb-6">
                 <img
@@ -43,9 +45,8 @@ export function GetInvolved() {
                 contribuţie, oricât de mică a fi este utilă şi mult apreciată.
               </p>
             </div>
-          </div>
-
-          <div className="px-3 mb-4 w-full md:w-1/3">
+          </Column>
+          <Column className="mb-4 w-full md:w-1/3">
             <div className="border-4 border-blue-900 p-8 h-full">
               <div className="flex flex-col lg:flex-row items-center mb-6">
                 <img
@@ -60,10 +61,9 @@ export function GetInvolved() {
                 național programelor: Civic Labs și Tech for Social Good.
               </p>
             </div>
-          </div>
-
-        </div>
-      </div>
+          </Column>
+        </Row>
+      </Container>
     </section>
   )
 }

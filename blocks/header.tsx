@@ -1,11 +1,12 @@
 import React from 'react'
+import { Container } from '../components/container'
 
 export function Header() {
   return (
     <section className="py-5">
-      <div className="container px-3 mx-auto">
+      <Container>
         Header
-      </div>
+      </Container>
     </section>
   )
 }
