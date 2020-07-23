@@ -1,10 +1,15 @@
 import React from 'react'
 import clsx from 'clsx'
 
-export function Container({ children, className }: { children: React.ReactNode, className?: string }) {
+type Props = React.PropsWithChildren<{
+  className?: string,
+  tag?: keyof JSX.IntrinsicElements
+}>
+
+export function Container({ children, className, tag: Tag = 'div' }: Props) {
   return (
-    <div className={clsx('container px-3 mx-auto', className)}>
+    <Tag className={clsx('container px-3 mx-auto', className)}>
       {children}
-    </div>
+    </Tag>
   )
 }
