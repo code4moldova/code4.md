@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImage from '../images/hero-image.jpeg'
+import heroImage from '../images/hero.jpeg'
 import { Container } from '../components/container'
 import { Row } from '../components/row'
 import { Column } from '../components/column'
