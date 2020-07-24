@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { Container } from '../components/container'
 import logo from '../images/logo.png'
+import Link from 'next/link'
 
 const menuItems = [
-  { title: 'Despre noi', active: false, url: '/despre' },
-  { title: 'Comunitate', active: true, url: '/comunitate' },
-  { title: 'Soluții IT', active: false, url: '/solutii' },
-  { title: 'Blog', active: false, url: '/blog' },
+  { title: 'Despre noi', active: false, url: '/about-us' },
+  { title: 'Comunitate', active: true, url: '#comunitate' },
+  { title: 'Soluții IT', active: false, url: '#solutii' },
+  { title: 'Blog', active: false, url: '#blog' },
 ]
 
 export function Header() {
@@ -34,22 +35,29 @@ export function Header() {
             </button>
           </div>
           <div className="flex-1 flex items-center justify-center lg:items-stretch lg:justify-start">
-            <img
-              className="h-20 lg:h-24 w-auto flex-shrink-0 lg:-ml-6 lg:mr-6"
-              src={logo} alt="logo"
-            />
+            <Link href="/">
+              <a className="flex-shrink-0">
+                <img className="h-20 lg:h-24 lg:-ml-6 lg:mr-6" src={logo} alt="logo" />
+              </a>
+            </Link>
             <div className="hidden lg:flex lg:ml-auto items-center">
               {menuItems.map(item => (
-                <a
-                  key={item.url}
-                  href={item.url}
-                  className={`ml-4 px-3 py-2 rounded-md text-sm leading-5 focus:text-gray-900 focus:bg-gray-300 transition duration-150 ease-in-out ${item.active ? 'text-gray-900 bg-gray-300 font-medium' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-300'}`}
-                >
-                  {item.title}
-                </a>
+                <Link key={item.url} href={item.url}>
+                  <a
+                    className={`ml-4 px-3 py-2 rounded-md text-sm leading-5 focus:text-gray-900 focus:bg-gray-300 transition duration-150 ease-in-out ${item.active ? 'text-gray-900 bg-gray-300 font-medium' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-300'}`}
+                  >
+                    {item.title}
+                  </a>
+                </Link>
               ))}
-              <button className="ml-5 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2">Implică-te</button>
-              <button className="ml-2 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2">Donează</button>
+              <button
+                className="ml-5 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2"
+              >Implică-te
+              </button>
+              <button
+                className="ml-2 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2"
+              >Donează
+              </button>
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center lg:static lg:inset-auto lg:ml-2">
@@ -61,17 +69,23 @@ export function Header() {
           <div className="lg:hidden absolute inset-x-0 bg-white -mt-4 shadow-2xl">
             <div className="px-2 pt-2 pb-3">
               {menuItems.map(item => (
-                <a
-                  key={item.url}
-                  href={item.url}
-                  className={`my-1 block px-3 py-2 rounded-md text-base font-medium focus:text-gray-900 focus:bg-gray-300 transition duration-150 ease-in-out ${item.active ? 'text-gray-900 bg-gray-300 font-medium' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-300'}`}
-                >
-                  {item.title}
-                </a>
+                <Link key={item.url} href={item.url}>
+                  <a
+                    className={`my-1 block px-3 py-2 rounded-md text-base font-medium focus:text-gray-900 focus:bg-gray-300 transition duration-150 ease-in-out ${item.active ? 'text-gray-900 bg-gray-300 font-medium' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-300'}`}
+                  >
+                    {item.title}
+                  </a>
+                </Link>
               ))}
               <div className="mx-3 flex mt-2">
-                <button className="w-1/2 mr-2 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2">Implică-te</button>
-                <button className="w-1/2 ml-2 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2">Donează</button>
+                <button
+                  className="w-1/2 mr-2 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2"
+                >Implică-te
+                </button>
+                <button
+                  className="w-1/2 ml-2 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2"
+                >Donează
+                </button>
               </div>
             </div>
           </div>
