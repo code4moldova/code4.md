@@ -5,7 +5,7 @@ import { Heading } from '../components/heading'
 
 export function AboutUsHero() {
   return (
-    <section className="py-16 lg:py-40 text-white bg-cover" style={{ backgroundImage: `url(${heroImage})` }}>
+    <section className="py-16 lg:pt-40 lg:pb-56 text-white bg-cover" style={{ backgroundImage: `url(${heroImage})` }}>
       <Container>
         <Heading tag="h1" className="text-4xl mb-5 md:mb-10">
           Noi suntem Code4Moldova

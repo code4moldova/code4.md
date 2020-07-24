@@ -33,7 +33,7 @@ const values = [
 
 export function OurValues() {
   return (
-    <section className="bg-gray-200 py-32">
+    <section className="bg-gray-200 pb-32 pt-32 lg:pt-56">
       <Container>
         <Heading tag="h1" className="text-center text-3xl mb-16">
           Valorile noastre
