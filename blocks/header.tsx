@@ -41,6 +41,7 @@ export function Header() {
             <div className="hidden lg:flex lg:ml-auto items-center">
               {menuItems.map(item => (
                 <a
+                  key={item.url}
                   href={item.url}
                   className={`ml-4 px-3 py-2 rounded-md text-sm leading-5 focus:text-gray-900 focus:bg-gray-300 transition duration-150 ease-in-out ${item.active ? 'text-gray-900 bg-gray-300 font-medium' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-300'}`}
                 >
@@ -61,6 +62,7 @@ export function Header() {
             <div className="px-2 pt-2 pb-3">
               {menuItems.map(item => (
                 <a
+                  key={item.url}
                   href={item.url}
                   className={`my-1 block px-3 py-2 rounded-md text-base font-medium focus:text-gray-900 focus:bg-gray-300 transition duration-150 ease-in-out ${item.active ? 'text-gray-900 bg-gray-300 font-medium' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-300'}`}
                 >
