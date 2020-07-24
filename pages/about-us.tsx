@@ -5,6 +5,7 @@ import Head from 'next/head'
 import { AboutUsHero } from '../blocks/about-us-hero'
 import { OurValues } from '../blocks/our-values'
 import { Heading } from '../components/heading'
+import { OurActivity } from '../blocks/our-activity'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         </div>
       </section>
       <OurValues />
+      <OurActivity />
       <Footer />
     </React.Fragment>
   )

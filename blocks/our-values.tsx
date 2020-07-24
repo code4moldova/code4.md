@@ -40,7 +40,7 @@ export function OurValues() {
         </Heading>
         <Row>
           {values.map(value => (
-            <Column className="w-full sm:w-1/2 mb-3 sm:mb-6 lg:w-1/4 ">
+            <Column key={value.title} className="w-full sm:w-1/2 mb-3 sm:mb-6 lg:w-1/4 ">
               <div className="bg-white h-full">
                 <div className="relative" style={{ paddingBottom: '100%' }}>
                   <div className="absolute inset-0 flex items-center justify-center">
