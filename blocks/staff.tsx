@@ -26,7 +26,7 @@ export function Staff() {
           civic tech din Moldova și prima comunitatea care poate contribui la digitalizarea țării prin soluții civice.
         </p>
 
-        <Row>
+        <Row className="-mb-12">
           {we.map(person => (
             <Column key={person.name} className="w-1/2 sm:w-1/3 md:w-1/4 mb-12">
               <div className="mb-4 relative" style={{ paddingBottom: '50%' }}>

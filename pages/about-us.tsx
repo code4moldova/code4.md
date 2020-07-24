@@ -7,6 +7,7 @@ import { OurValues } from '../blocks/our-values'
 import { Heading } from '../components/heading'
 import { OurActivity } from '../blocks/our-activity'
 import { Staff } from '../blocks/staff'
+import { BeWithUs } from '../blocks/be-with-us'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <OurValues />
       <OurActivity />
       <Staff />
+      <BeWithUs />
       <Footer />
     </React.Fragment>
   )
