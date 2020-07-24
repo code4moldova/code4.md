@@ -9,10 +9,10 @@ export function Footer() {
     <section className="py-5">
       <Container>
         <Row>
-          <Column>
-            <img className="h-32 -ml-6" src={logo} alt="logo" />
+          <Column className="w-full md:w-auto">
+            <img className="h-32 mx-auto md:-ml-6" src={logo} alt="logo" />
           </Column>
-          <Column className="flex-grow flex items-center">
+          <Column className="flex-grow flex items-center justify-center md:justify-start mb-5 md:mb-0">
             <div className="flex">
               <div className="mr-20">
                 <a href="#parteneri" className="text-sm">Parteneri</a>
