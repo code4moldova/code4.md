@@ -8,12 +8,12 @@ import heart from '../images/heart.svg'
 
 export function OurActivity() {
   return (
-    <section className="text-center md:text-left py-16 sm:py-24">
+    <section className="py-16 sm:py-24">
       <Container>
-        <Heading tag="h1" className="text-3xl mb-20">Activitatea noastră</Heading>
+        <Heading tag="h1" className="text-center md:text-left text-3xl mb-20">Activitatea noastră</Heading>
 
         <Row>
-          <Column className="w-1/2">
+          <Column className="w-full lg:w-1/2">
             <div className="h-full p-12 hover:bg-blue-200 transition-colors ease-in-out duration-300">
               <img src={civicGood} alt="civic good" className="mb-8" />
               <a href="#civic-labs">
@@ -31,7 +31,7 @@ export function OurActivity() {
               </p>
             </div>
           </Column>
-          <Column className="w-1/2">
+          <Column className="w-full lg:w-1/2">
             <div className="h-full p-12 hover:bg-yellow-200 transition-colors ease-in-out duration-300">
               <img src={heart} alt="tech for social goods" className="mb-8" />
               <a href="#tech-for-social-goods">
