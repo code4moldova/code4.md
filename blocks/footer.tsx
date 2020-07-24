@@ -29,7 +29,7 @@ export function Footer() {
               </div>
             </div>
           </Column>
-          <Column className="flex items-center">
+          <Column className="flex items-center mx-auto">
             <a href="#facebook">
               <svg className="w-10 h-10" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
