@@ -2,6 +2,7 @@ import React from 'react'
 import { Container } from '../components/container'
 import { Row } from '../components/row'
 import { Column } from '../components/column'
+import { Heading } from '../components/heading'
 
 export function Solutions() {
   return (
@@ -9,9 +10,9 @@ export function Solutions() {
       <Container>
 
         <div className="flex justify-between items-center mb-5 md:mb-10">
-          <h1 className="text-3xl" style={{ fontFamily: 'Space Mono' }}>
+          <Heading tag="h1" className="text-3xl">
             Soluții IT
-          </h1>
+          </Heading>
           <button className="border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2">
             Vezi toate
           </button>

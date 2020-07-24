@@ -5,15 +5,16 @@ import { Column } from '../components/column'
 import voluntary from '../images/voluntary.png'
 import donate from '../images/donate.png'
 import partner from '../images/partner.png'
+import { Heading } from '../components/heading'
 
 export function GetInvolved() {
   return (
     <section className="py-5 md:py-16">
       <Container>
 
-        <h1 className="text-3xl mb-5 md:mb-10" style={{ fontFamily: 'Space Mono' }}>
+        <Heading tag="h1" className="text-3xl mb-5 md:mb-10">
           Implică-te
-        </h1>
+        </Heading>
 
         <Row>
           <Column className="mb-4 w-full md:w-1/3">

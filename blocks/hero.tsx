@@ -3,6 +3,7 @@ import heroImage from '../images/hero.jpeg'
 import { Container } from '../components/container'
 import { Row } from '../components/row'
 import { Column } from '../components/column'
+import { Heading } from '../components/heading'
 
 export function Hero() {
   return (
@@ -10,11 +11,11 @@ export function Hero() {
       <Container>
         <Row>
           <Column className="z-10 lg:w-1/2 flex flex-col justify-center my-12">
-            <h1 className="text-4xl mb-10" style={{ fontFamily: 'Space Mono' }}>
+            <Heading tag="h1" className="text-4xl mb-10">
               Soluții IT pro-bono în Moldova. No way?
               <br />
               <span className="text-blue-700">There is one!</span>
-            </h1>
+            </Heading>
             <p className="mb-12 xl:mr-32">
               <b>Code for Moldova</b> este o asociație obștească apolitică, neguvernamentală și non-profit. Prima
               Asociație
