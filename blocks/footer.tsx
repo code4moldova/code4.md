@@ -15,14 +15,14 @@ export function Footer() {
           <Column className="flex-grow flex items-center justify-center md:justify-start mb-5 md:mb-0">
             <div className="flex">
               <div className="mr-20">
-                <a href="#parteneri" className="text-sm">Parteneri</a>
+                <a href="oursponsors" className="text-sm">Parteneri</a>
                 <br/>
-                <a href="#sustinatori" className="text-sm">Susținători</a>
+                <a href="oursponsors" className="text-sm">Susținători</a>
               </div>
               <div className="mr-20">
-                <a href="#conduita" className="text-sm">Cod de conduită</a>
+                <a href="legal" className="text-sm">Cod de conduită</a>
                 <br/>
-                <a href="#lega" className="text-sm">Legal</a>
+                <a href="legal" className="text-sm">Legal</a>
               </div>
               <div className="mr-20">
                 <a href="#contacte" className="text-sm">Contacte</a>

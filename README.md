@@ -28,3 +28,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+#Hot to edit text on the web site?
+1. Download app https://github.com/jcbvm/i18n-editor
+2. Open folder i18n, and do that
+
+
+# Docker
+- sudo docker build -t my-nodejs-app .
+- sudo docker run -it --rm  -v path/to/code4.md:/homeapp -p 3000:3000 --name my-running-app my-nodejs-app
+- npm install
+- `http-server -p 8882`
+- go to localhost:8882
