@@ -9,7 +9,7 @@ import { OurActivity } from '../blocks/our-activity'
 import { Staff } from '../blocks/staff'
 import { BeWithUs } from '../blocks/be-with-us'
 
-export default function Home() {
+export default function AboutUs() {
   return (
     <React.Fragment>
       <Head>

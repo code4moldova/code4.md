@@ -9,7 +9,7 @@ export default function OurSponsors() {
   return (
     <React.Fragment>
       <Head>
-        <title>Code 4 Moldova Sponsors</title>
+        <title>Sponsori / Code 4 Moldova Sponsors</title>
       </Head>
       <Header />
       <Partners />

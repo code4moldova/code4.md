@@ -3,6 +3,7 @@ import { Container } from '../components/container'
 import logo from '../images/logo.png'
 import { Row } from '../components/row'
 import { Column } from '../components/column'
+import Link from 'next/link'
 
 export function Footer() {
   return (
@@ -15,14 +16,22 @@ export function Footer() {
           <Column className="flex-grow flex items-center justify-center md:justify-start mb-5 md:mb-0">
             <div className="flex">
               <div className="mr-20">
-                <a href="oursponsors" className="text-sm">Parteneri</a>
+                <Link href="/our-sponsors">
+                  <a className="text-sm">Parteneri</a>
+                </Link>
                 <br/>
-                <a href="oursponsors" className="text-sm">Susținători</a>
+                <Link href="/our-sponsors">
+                  <a className="text-sm">Susținători</a>
+                </Link>
               </div>
               <div className="mr-20">
-                <a href="legal" className="text-sm">Cod de conduită</a>
+                <Link href="/legal">
+                  <a className="text-sm">Cod de conduită</a>
+                </Link>
                 <br/>
-                <a href="legal" className="text-sm">Legal</a>
+                <Link href="/legal">
+                  <a className="text-sm">Legal</a>
+                </Link>
               </div>
               <div>
                 <a href="#contacte" className="text-sm">Contacte</a>

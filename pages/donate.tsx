@@ -8,7 +8,7 @@ import { Heading } from '../components/heading'
 import { Row } from '../components/row'
 import { Column } from '../components/column'
 
-export default function Home() {
+export default function Donate() {
   return (
     <React.Fragment>
       <Head>

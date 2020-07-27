@@ -7,7 +7,7 @@ import { Volunteers } from '../blocks/volunteers'
 import { Staff } from '../blocks/staff'
 import { BeWithUs } from '../blocks/be-with-us'
 
-export default function Home() {
+export default function Community() {
   return (
     <React.Fragment>
       <Head>
