@@ -3,6 +3,8 @@ import { Container } from '../components/container'
 import { Row } from '../components/row'
 import { Column } from '../components/column'
 import { Heading } from '../components/heading'
+import girl from '../images/girl-pressing-door-buttons.jpeg'
+import covidCell from '../images/covid-cell.png'
 
 export function Solutions() {
   return (
@@ -24,10 +26,9 @@ export function Solutions() {
               <div className="relative" style={{ paddingBottom: '75%' }}>
                 <img
                   className="absolute w-full h-full object-cover"
-                  src="https://s3-alpha-sig.figma.com/img/2c53/b0ba/52bd8ed934e2cb3edf78508dc7f9cc77?Expires=1595808000&Signature=LJAPmie~b~SkJzHbG7kLE5zyarHo8CAm1jrjNeF4pONs1WjbQzEKEiaJ~IZ5BxEfXN5w93BywHxZmg1T0Ny8mA98AbZOwS~s3WMsbi-80LdOcIIAFDFSBdUEtLz~QnLTu9n~G2cQVqUWa53O2IIaJRzqYTvYn083~caDCh2ga87eMw8v0txKC-k5CaRS0MgHuk~~-F0uZ1ouQIdk41knN9dLsGHJJPSlQme8z7TeArbH3EXQ0QlHdUNmQXSR98QbuMMp~B58t9Rne8o2O5ZbIXOb-XH5kILBfhy1zat00nAcAowYjTfBEM5FuLMzxVKI52Itv1riwKO83Wj9LMkPwQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                  src={girl}
                   alt="Girl pressing door buttons"
                 />
-                <div className="absolute w-full h-full bg-green-700 opacity-50" />
                 <div className="absolute w-full h-full flex items-center justify-end p-8 sm:p-16 md:p-8 lg:p-16">
                   <h2
                     className="uppercase text-3xl sm:text-4xl md:text-2xl lg:text-3xl text-white font-bold text-right"
@@ -55,10 +56,9 @@ export function Solutions() {
               <div className="relative" style={{ paddingBottom: '75%' }}>
                 <img
                   className="absolute w-full h-full object-cover"
-                  src="https://s3-alpha-sig.figma.com/img/06d5/feb0/56b1a0a66fd3d422be6cfdb1e17ab519?Expires=1595808000&Signature=DJeOURX~~S9RwuvQiL8dGcMPy8VO1laUrMpbDSCnN8h9Uc8vOn6w6H6BonKFY0E8plKD1UStIu0nj1mjnfV5Ghs3X9-0gKM7JC6gQSo5erF56IoMXzsxwUqOWvysMNTZqk668jQpAyYIJvRjNHBFcv5usq5WHbyWrzpaJnecEKYOuSbTC8WkiXB4vjoYIYtSSTywdCIgKNQr95pG9qLbJyF49AIo9Ahk5o5BtQ7JU4hBDZa6LSEvM8UniIPdcfRSoHiXJ5er1D556obPJv1-PjnbkpgrElyPbXBPwgX1mlzCQLBzONSS593W-87y5o3QJc6r2KiMmEPN62N3cZjlOQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                  src={covidCell}
                   alt="Coronvirus image"
                 />
-                <div className="absolute w-full h-full bg-red-800 opacity-50" />
                 <div className="absolute w-full h-full flex items-center justify-end p-8 sm:p-16 md:p-8 lg:p-16">
                   <h2
                     className="uppercase text-3xl sm:text-4xl md:text-2xl lg:text-3xl text-white font-bold text-right"
