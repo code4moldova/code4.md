@@ -1,9 +1,14 @@
 import React from 'react'
 import clsx from 'clsx'
 
-export function Column({ children, className }: { children: React.ReactNode, className?: string }) {
+type Props = React.PropsWithChildren<{
+  className?: string
+  style?: React.CSSProperties
+}>
+
+export function Column({ children, className, style }: Props) {
   return (
-    <div className={clsx('px-3', className)}>
+    <div className={clsx('px-3', className)} style={style}>
       {children}
     </div>
   )

@@ -21,7 +21,7 @@ export function Staff() {
         <Heading tag="h1" className="text-3xl mb-8">
           Staff
         </Heading>
-        <p className="mb-16">
+        <p className="mb-16 lg:w-2/3">
           Ei sunt cei care fac activitatea Code for Moldova să existe. Grație eforturilor lor formăm prima organizație
           civic tech din Moldova și prima comunitatea care poate contribui la digitalizarea țării prin soluții civice.
         </p>
