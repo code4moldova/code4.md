@@ -24,7 +24,7 @@ export function Footer() {
                 <br/>
                 <a href="legal" className="text-sm">Legal</a>
               </div>
-              <div className="mr-20">
+              <div>
                 <a href="#contacte" className="text-sm">Contacte</a>
               </div>
             </div>
