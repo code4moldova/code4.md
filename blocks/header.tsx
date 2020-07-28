@@ -6,7 +6,7 @@ import Link from 'next/link'
 const menuItems = [
   { title: 'Despre noi', active: false, url: '/about-us' },
   { title: 'Comunitate', active: true, url: '/community' },
-  { title: 'Soluții IT', active: false, url: '#solutii' },
+  { title: 'Soluții IT', active: false, url: '/solutions' },
   { title: 'Blog', active: false, url: '#blog' },
 ]
 
