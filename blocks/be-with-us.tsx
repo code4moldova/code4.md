@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import React from 'react'
+import { Button } from '../components/button'
 import { Container } from '../components/container'
 import { Heading } from '../components/heading'
 
@@ -10,18 +12,16 @@ export function BeWithUs() {
           <Heading tag="h3" className="text-xl mb-6">
             Fii parte din comunitatea noastră
           </Heading>
-          <a
-            href="#implica-te"
-            className="mr-2 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2"
-          >
-            Implică-te
-          </a>
-          <a
-            href="#doneaza"
-            className="ml-2 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2"
-          >
-            Donează
-          </a>
+          <Link href="/get-involved" passHref>
+            <Button tag="a" buttonType="primary-outline" className="mr-2">
+              Implică-te
+            </Button>
+          </Link>
+          <Link href="/donate" passHref>
+            <Button tag="a" buttonType="primary" className="ml-2">
+              Donează
+            </Button>
+          </Link>
         </div>
       </Container>
     </section>
