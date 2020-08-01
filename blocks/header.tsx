@@ -1,7 +1,8 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
+import { Button } from '../components/button'
 import { Container } from '../components/container'
 import logo from '../images/logo.png'
-import Link from 'next/link'
 
 const menuItems = [
   { title: 'Despre noi', active: false, url: '/about-us' },
@@ -50,18 +51,20 @@ export function Header() {
                   </a>
                 </Link>
               ))}
-              <button
-                className="ml-5 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2"
-              >Implică-te
-              </button>
-              <button
-                className="ml-2 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2"
-              >Donează
-              </button>
+              <Link href="/get-involved" passHref>
+                <Button tag="a" buttonType="primary-outline" className="ml-5">
+                  Implică-te
+                </Button>
+              </Link>
+              <Link href="/donate" passHref>
+                <Button tag="a" buttonType="primary" className="ml-2">
+                  Donează
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center lg:static lg:inset-auto lg:ml-2">
-            <button className="border-2 px-3 py-2">RO</button>
+            <Button buttonType="secondary-outline">RO</Button>
           </div>
         </div>
 
@@ -78,14 +81,16 @@ export function Header() {
                 </Link>
               ))}
               <div className="mx-3 flex mt-2">
-                <button
-                  className="w-1/2 mr-2 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2"
-                >Implică-te
-                </button>
-                <button
-                  className="w-1/2 ml-2 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2"
-                >Donează
-                </button>
+                <Link href="/get-involved" passHref>
+                  <Button tag="a" buttonType="primary-outline" className="w-1/2 mr-2">
+                    Implică-te
+                  </Button>
+                </Link>
+                <Link href="/donate" passHref>
+                  <Button tag="a" buttonType="primary" className="w-1/2 ml-2">
+                    Donează
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

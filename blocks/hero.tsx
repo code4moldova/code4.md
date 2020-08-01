@@ -1,9 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
-import heroImage from '../images/hero.jpeg'
-import { Container } from '../components/container'
-import { Row } from '../components/row'
+import { Button } from '../components/button'
 import { Column } from '../components/column'
+import { Container } from '../components/container'
 import { Heading } from '../components/heading'
+import { Row } from '../components/row'
+import heroImage from '../images/hero.jpeg'
 
 export function Hero() {
   return (
@@ -23,19 +25,23 @@ export function Hero() {
             </p>
 
             <div>
-              <button
-                className="mr-3 border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2"
-              >
-                Vezi toate
-              </button>
-
-              <button className="border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2">
-                Vezi toate
-              </button>
+              <Link href="/get-involved" passHref>
+                <Button tag="a" buttonType="primary-outline" className="mr-1">
+                  Implică-te
+                </Button>
+              </Link>
+              <Link href="/donate" passHref>
+                <Button tag="a" buttonType="primary" className="ml-1">
+                  Donează
+                </Button>
+              </Link>
             </div>
           </Column>
           <Column className="z-0 lg:w-1/2 lg:my-12">
-            <img src={heroImage} className="absolute lg:static inset-0 w-full h-full object-cover" alt="typing on keyboard" />
+            <img
+              src={heroImage}
+              className="absolute lg:static inset-0 w-full h-full object-cover"
+              alt="typing on keyboard" />
             <div className="absolute lg:hidden inset-0 bg-white opacity-75" />
           </Column>
         </Row>

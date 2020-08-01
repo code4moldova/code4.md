@@ -1,10 +1,12 @@
+import Link from 'next/link'
 import React from 'react'
-import { Container } from '../components/container'
-import { Row } from '../components/row'
+import { Button } from '../components/button'
 import { Column } from '../components/column'
+import { Container } from '../components/container'
 import { Heading } from '../components/heading'
-import girl from '../images/girl-pressing-door-buttons.jpeg'
+import { Row } from '../components/row'
 import covidCell from '../images/covid-cell.png'
+import girl from '../images/girl-pressing-door-buttons.jpeg'
 
 export function Solutions() {
   return (
@@ -15,9 +17,11 @@ export function Solutions() {
           <Heading tag="h1" className="text-3xl">
             Soluții IT
           </Heading>
-          <button className="border-2 border-blue-700 text-blue-600 hover:text-white hover:bg-blue-700 px-5 py-2">
-            Vezi toate
-          </button>
+          <Link href="/solutions" passHref>
+            <Button tag="a" buttonType="primary-outline">
+              Vezi toate
+            </Button>
+          </Link>
         </div>
 
         <Row>
