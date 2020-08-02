@@ -85,7 +85,7 @@ export function Solutions() {
             <div className="bg-white h-full">
               <div className="relative" style={{ paddingBottom: '75%' }}>
                 <img
-                  className="absolute w-full h-full object-cover" src="https://picsum.photos/550/300"
+                  className="absolute w-full h-full object-cover" src={girl}
                   alt="Sunset in the mountains"
                 />
                 <div className="absolute w-full h-full bg-gray-700 opacity-75" />

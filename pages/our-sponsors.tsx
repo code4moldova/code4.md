@@ -4,6 +4,7 @@ import { Partners } from '../blocks/partners'
 import { Sponsors } from '../blocks/sponsors'
 import { Footer } from '../blocks/footer'
 import Head from 'next/head'
+import { BeWithUs } from '../blocks/be-with-us'
 
 export default function OurSponsors() {
   return (
@@ -12,8 +13,8 @@ export default function OurSponsors() {
         <title>Sponsori / Code 4 Moldova Sponsors</title>
       </Head>
       <Header />
-      <Partners />
       <Sponsors />
+      <BeWithUs />
       <Footer />
     </React.Fragment>
   )
