@@ -10,7 +10,7 @@ import dionisieGhetu from '../images/dionisie-ghetu.jpeg'
 import anaParaschiv from '../images/ana-paraschiv.png'
 import andreiLuca from '../images/andrei-luca.jpeg'
 import marinaPorumb from '../images/marina-porumb.jpeg'
-import nataliaScrelea from '../images/natalia-screlea.png'
+import irinabuzu from '../images/irinabuzu.jpg'
 import { Row } from '../components/row'
 import { Column } from '../components/column'
 
@@ -123,9 +123,9 @@ const we = [
     linkedin: '#linkedin',
   },
   {
-    name: 'Natalia Screlea',
-    role: 'Chief Communication Officer',
-    image: nataliaScrelea,
+    name: 'Irina Buzu',
+    role: 'Legal Reseacher',
+    image: irinabuzu,
     linkedin: '#linkedin',
   },
 ]
