@@ -20,7 +20,7 @@ export function GetInvolved() {
         <Row>
           <Column className="mb-4 w-full md:w-1/3">
             <Link href="/get-involved">
-                <div className="border-4 border-blue-500 p-8 h-full">
+                <a className="border-4 border-blue-500 p-8 h-full block">
                   <div className="flex flex-col lg:flex-row items-center mb-6">
                     <img className="w-20 mb-4 lg:mb-0" src={voluntary} alt="" />
                     <h2 className="text-3xl font-medium text-blue-500 lg:ml-6">Fii voluntar!</h2>
@@ -30,12 +30,12 @@ export function GetInvolved() {
                     crearea
                     aplicațiilor civice, ce vor face Moldova țara pe care ni-o dorim cu toții!
                   </p>
-                </div>
+                </a>
             </Link>
           </Column>
           <Column className="mb-4 w-full md:w-1/3">
             <Link href="/donate">
-                <div className="border-4 border-indigo-700 p-8 h-full">
+                <a className="border-4 border-indigo-700 p-8 h-full block">
                   <div className="flex flex-col lg:flex-row items-center mb-6">
                     <img className="w-20 mb-4 lg:mb-0" src={donate} alt="" />
                     <h2 className="text-3xl font-medium text-indigo-700 lg:ml-6">Donează!</h2>
@@ -44,12 +44,12 @@ export function GetInvolved() {
                     Dacă vrei să susții cercetările desfășurate și aplicațiile pe care le implementăm poți veni cu o
                     contribuţie, oricât de mică a fi este utilă şi mult apreciată.
                   </p>
-                </div>
+                </a>
             </Link>
           </Column>
           <Column className="mb-4 w-full md:w-1/3">
             <Link href="/get-involved">
-                <div className="border-4 border-blue-900 p-8 h-full">
+                <a className="border-4 border-blue-900 p-8 h-full block">
                   <div className="flex flex-col lg:flex-row items-center mb-6">
                     <img className="w-20 mb-4 lg:mb-0" src={partner} alt="" />
                     <h2 className="text-3xl font-medium text-blue-900 lg:ml-6">Devino partener!</h2>
@@ -58,7 +58,7 @@ export function GetInvolved() {
                     Devino una dintre companiile care încurajează voluntariatul în IT și alătură-te ca partener local sau
                     național programelor: Civic Labs și Tech for Social Good.
                   </p>
-                </div>
+                </a>
             </Link>
           </Column>
         </Row>
