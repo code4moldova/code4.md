@@ -75,7 +75,7 @@ export default function Home() {
                     justo dolor sit amet, consectetur adipiscing.
                   </p>
                 </div>
-                <Link href="#join-us">
+                <Link href="#https://forms.gle/rMH5XpsSjhaY8Lr97">
                   <a className="mt-auto py-4 px-12 w-full bg-blue-500 hover:bg-blue-700 text-white text-center">
                     Devino voluntar
                   </a>
@@ -139,7 +139,7 @@ export default function Home() {
               Devino una dintre companiile care încurajează voluntariatul în IT și alătură-te ca partener local sau
               național programelor: Civic Labs și Tech for Social Good.
             </div>
-            <Link href="#contact">
+            <Link href="#mailto:contact@code4.md">
               <a className="mt-auto py-4 px-12 w-full bg-blue-900 hover:bg-blue-700 text-white text-center">
                 Hai să vorbim
               </a>

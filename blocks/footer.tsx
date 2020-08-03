@@ -34,7 +34,7 @@ export function Footer() {
                 </Link>
               </div>
               <div>
-                <a href="#contacte" className="text-sm">Contacte</a>
+                <a href="mailto:contact@code4.md" className="text-sm">Contacte</a>
               </div>
             </div>
           </Column>
