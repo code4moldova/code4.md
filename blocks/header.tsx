@@ -1,14 +1,15 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { ActiveLink } from '../components/active-link'
 import { Button } from '../components/button'
 import { Container } from '../components/container'
 import logo from '../images/logo.png'
 
 const menuItems = [
-  { title: 'Despre noi', active: false, url: '/about-us' },
-  { title: 'Comunitate', active: true, url: '/community' },
-  { title: 'Soluții IT', active: false, url: '/solutions' },
-  { title: 'Blog', active: false, url: '#blog' },
+  { title: 'Despre noi', url: '/about-us' },
+  { title: 'Comunitate', url: '/community' },
+  { title: 'Soluții IT', url: '/solutions' },
+  { title: 'Blog', url: '#blog' },
 ]
 
 export function Header() {
@@ -43,28 +44,32 @@ export function Header() {
             </Link>
             <div className="hidden lg:flex lg:ml-auto items-center">
               {menuItems.map(item => (
-                <Link key={item.url} href={item.url}>
-                  <a
-                    className={`ml-4 px-3 py-2 rounded-md text-sm leading-5 focus:text-gray-900 focus:bg-gray-300 transition duration-150 ease-in-out ${item.active ? 'text-gray-900 bg-gray-300 font-medium' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-300'}`}
-                  >
+                <ActiveLink
+                  key={item.url}
+                  href={item.url}
+                  classNameActive="text-blue-700 border-blue-700"
+                  classNameInactive="text-gray-900 hover:text-blue-700 border-white">
+                  <a className="ml-4 px-3 py-2 border-b-2 text-sm leading-5 focus:text-blue-700 transition duration-150 ease-in-out">
                     {item.title}
                   </a>
-                </Link>
+                </ActiveLink>
               ))}
               <Link href="/get-involved" passHref>
-                <Button tag="a" buttonType="primary-outline" className="ml-5">
-                  Implică-te
+                <Button buttonType="primary-outline">
+                  <a className="ml-5">Implică-te</a>
                 </Button>
               </Link>
               <Link href="/donate" passHref>
-                <Button tag="a" buttonType="primary" className="ml-2">
-                  Donează
+                <Button buttonType="primary">
+                  <a className="ml-2">Donează</a>
                 </Button>
               </Link>
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center lg:static lg:inset-auto lg:ml-2">
-            <Button buttonType="secondary-outline">RO</Button>
+            <Button buttonType="secondary-outline">
+              <button>RO</button>
+            </Button>
           </div>
         </div>
 
@@ -72,23 +77,25 @@ export function Header() {
           <div className="lg:hidden absolute inset-x-0 bg-white -mt-4 shadow-2xl">
             <div className="px-2 pt-2 pb-3">
               {menuItems.map(item => (
-                <Link key={item.url} href={item.url}>
-                  <a
-                    className={`my-1 block px-3 py-2 rounded-md text-base font-medium focus:text-gray-900 focus:bg-gray-300 transition duration-150 ease-in-out ${item.active ? 'text-gray-900 bg-gray-300 font-medium' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-300'}`}
-                  >
+                <ActiveLink
+                  key={item.url}
+                  href={item.url}
+                  classNameActive="text-blue-700 border-blue-700"
+                  classNameInactive="text-gray-900 hover:text-blue-700 border-white">
+                  <a className="my-1 block px-3 py-2 border-b-2 text-base focus:text-blue-700 transition duration-150 ease-in-out">
                     {item.title}
                   </a>
-                </Link>
+                </ActiveLink>
               ))}
               <div className="mx-3 flex mt-2">
                 <Link href="/get-involved" passHref>
-                  <Button tag="a" buttonType="primary-outline" className="w-1/2 mr-2">
-                    Implică-te
+                  <Button buttonType="primary-outline">
+                    <a className="w-1/2 mr-2">Implică-te</a>
                   </Button>
                 </Link>
                 <Link href="/donate" passHref>
-                  <Button tag="a" buttonType="primary" className="w-1/2 ml-2">
-                    Donează
+                  <Button buttonType="primary">
+                    <a className="w-1/2 ml-2">Donează</a>
                   </Button>
                 </Link>
               </div>

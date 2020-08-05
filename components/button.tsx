@@ -1,18 +1,23 @@
 import clsx from 'clsx'
-import React from 'react'
+import React, { ReactElement } from 'react'
 
 type Props = {
-  tag?: keyof JSX.IntrinsicElements
+  children: ReactElement
   buttonType?: keyof typeof ButtonType
   buttonSize?: keyof typeof ButtonSize
   [key: string]: any
 }
 
-export function Button(props: Props) {
-  const { tag: Tag = 'button', buttonType = 'primary', buttonSize = 'base', className, ...rest } = props
-  const classes = clsx(ButtonType[buttonType], ButtonSize[buttonSize], className)
-  return <Tag className={classes} {...rest} />
-}
+export const Button = React.forwardRef<any, Props>((props, ref) => {
+    const { children, buttonType = 'primary', buttonSize = 'base', ...rest } = props
+    const child = React.Children.only(children)
+    return React.cloneElement(child, {
+      ...rest,
+      className: clsx(child?.props?.className, ButtonType[buttonType], ButtonSize[buttonSize]),
+      ref,
+    })
+  },
+)
 
 const ButtonType = {
   'primary': 'border-2 border-blue-700 bg-blue-700 text-white hover:border-blue-900 hover:bg-blue-900',

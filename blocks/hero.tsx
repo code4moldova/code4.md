@@ -26,13 +26,13 @@ export function Hero() {
 
             <div>
               <Link href="/get-involved" passHref>
-                <Button tag="a" buttonType="primary-outline" className="mr-1">
-                  Implică-te
+                <Button buttonType="primary-outline">
+                  <a className="mr-1">Implică-te</a>
                 </Button>
               </Link>
               <Link href="/donate" passHref>
-                <Button tag="a" buttonType="primary" className="ml-1">
-                  Donează
+                <Button buttonType="primary">
+                  <a className="ml-1">Donează</a>
                 </Button>
               </Link>
             </div>

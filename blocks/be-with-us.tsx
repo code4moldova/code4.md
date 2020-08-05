@@ -13,13 +13,13 @@ export function BeWithUs() {
             Fii parte din comunitatea noastră
           </Heading>
           <Link href="/get-involved" passHref>
-            <Button tag="a" buttonType="primary-outline" className="mr-2">
-              Implică-te
+            <Button buttonType="primary-outline">
+              <a className="mr-2">Implică-te</a>
             </Button>
           </Link>
           <Link href="/donate" passHref>
-            <Button tag="a" buttonType="primary" className="ml-2">
-              Donează
+            <Button buttonType="primary">
+              <a className="ml-2">Donează</a>
             </Button>
           </Link>
         </div>

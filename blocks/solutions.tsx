@@ -18,8 +18,8 @@ export function Solutions() {
             Soluții IT
           </Heading>
           <Link href="/solutions" passHref>
-            <Button tag="a" buttonType="primary-outline">
-              Vezi toate
+            <Button buttonType="primary-outline">
+              <a>Vezi toate</a>
             </Button>
           </Link>
         </div>
