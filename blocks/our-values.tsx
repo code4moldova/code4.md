@@ -27,7 +27,7 @@ const values = [
   {
     image: innovation,
     title: 'Inovație',
-    description: 'acem imposibilul posibil și nu ne limităm la tradițional.',
+    description: 'Facem imposibilul posibil și nu ne limităm la tradițional.',
   },
 ]
 
