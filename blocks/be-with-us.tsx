@@ -8,7 +8,7 @@ export function BeWithUs() {
   return (
     <section className="py-3 md:py-24">
       <Container className="flex justify-center">
-        <div className="bg-blue-200 py-16 px-24 text-center">
+        <div className="bg-blue-200 py-16 px-3 sm:px-24 text-center">
           <Heading tag="h3" className="text-xl mb-6">
             Fii parte din comunitatea noastră
           </Heading>
