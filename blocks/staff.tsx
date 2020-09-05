@@ -81,7 +81,7 @@ const we = [
   },
   {
     name: 'Ion Moșnoi',
-    role: 'Chief Tech Lead',
+    role: 'Chief Technology Officer',
     image: ionMosnoi,
     linkedin: '#linkedin',
   },

@@ -24,9 +24,10 @@ export default function Home() {
             Implică-te
           </Heading>
           <p className="w-full sm:w-3/5 xl:w-3/5 mx-auto">
-            Implicarea activă a voluntarilor este baza succesului comunității noastre. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Convallis est, quis suspendisse nunc, odio et, ut amet. Arcu, erat malesuada
-            venenatis cum amet lectus vitae, ullamcorper nunc.
+            Implicarea ta contribuie la dezvoltarea societății noastre. Oferind câteva ore,
+            know-how-ul tău sau o donație oricât de mică, ne ajută să identificăm atât problemele
+            din comunitate cât și să dezvoltăm soluții digitale pentru o Moldovă mai bună.
+            Vino alături de noi și susține aplicațiile civice!
           </p>
         </Container>
         <Container className="xl:mb-8">
@@ -38,41 +39,47 @@ export default function Home() {
                   <h2 className="text-2xl font-bold text-blue-500">Dăruiește Timp</h2>
                 </div>
                 <div className="px-12 mb-8">
-                  <p className="text-gray-800">Avem nevoie de specialiști în următoarele domenii:</p>
+                  <p className="text-gray-800">
+                  Dacă ai cunoștințe și aptitudini de programist, te poți implica ca voluntar
+                  Code For Moldova la următorul HackDay. Hai să ne cunoaștem acolo și apoi,
+                  să dezvoltăm aplicații digitale care vor schimba vieți spre bine.
+                  </p>
 
                   <div className="my-12">
                     <div className="-mb-2">
                       <span
                         className="inline-flex items-center px-5 py-1 mb-2 mr-2 text-blue-500 border border-blue-500 rounded-md"
                       >
-                      {rulerSvg} <span className="ml-2">Design</span>
-                    </span>
+                        {rulerSvg} <span className="ml-2">Design</span>
+                      </span>
                       <span
                         className="inline-flex items-center px-5 py-1 mb-2 mr-2 text-pink-500 border border-pink-500 rounded-md"
                       >
-                      {developerSvg} <span className="ml-2">Programare</span>
-                    </span>
+                        {developerSvg} <span className="ml-2">Programare</span>
+                      </span>
                       <span
                         className="inline-flex items-center px-5 py-1 mb-2 mr-2 text-indigo-500 border border-indigo-500 rounded-md"
                       >
-                      {searchSvg} <span className="ml-2">Cercetare</span>
-                    </span>
+                        {searchSvg} <span className="ml-2">Cercetare</span>
+                      </span>
                       <span
                         className="inline-flex items-center px-5 py-1 mb-2 mr-2 text-yellow-800 border border-yellow-800 rounded-md"
                       >
-                      {chatSvg} <span className="ml-2">Comunicare</span>
-                    </span>
+                        {chatSvg} <span className="ml-2">Comunicare</span>
+                      </span>
                       <span
                         className="inline-flex items-center px-5 py-1 mb-2 mr-2 text-gray-600 border border-gray-600 rounded-md"
                       >
-                      {plusSvg} <span className="ml-2">Alte</span>
-                    </span>
+                        {plusSvg} <span className="ml-2">Alte</span>
+                      </span>
                     </div>
                   </div>
 
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac sodales lobortis netus eu vestibulum
-                    justo dolor sit amet, consectetur adipiscing.
+                  Dacă posezi alte skill-uri din zona de comunicare, design, cercetare,
+                  organizare evenimente și ești gata să donezi timp pentru susținerea activității
+                  Code For Moldova, atunci trimite-ne mai multe detalii despre tine
+                  pe <a className="text-blue-500" href="mailto:contact@code4.md">contact@code4.md</a>
                   </p>
                 </div>
 
@@ -90,8 +97,8 @@ export default function Home() {
                 </div>
                 <div className="px-12 mb-8">
                   <p className="text-gray-800">
-                    Code for Moldova se bazează pe voluntariat, însă activitatea noastră implică anumite cheltuieli,
-                    precum ar fi:
+                    Code for Moldova se bazează pe voluntariat, însă activitatea noastră
+                    implică multe cheltuieli, precum:
                   </p>
 
                   <div className="my-12 px-0 sm:px-8">
@@ -116,8 +123,9 @@ export default function Home() {
                   </div>
 
                   <p>
-                    Fiecare donație ajută la continuarea activității noastre. TU poți contribui la dezvoltarea unui
-                    proiect!
+                    Dacă îți plac <Link href="/solutions"><a className="text-blue-500">aplicațiile noastre</a></Link>,
+                    poți investi în ele printr-o donație. Fiecare donație ajută la continuarea
+                    activității noastre și la dezvoltarea și la mentenanța soluțiilor digitale pentru societate.
                   </p>
                 </div>
                 <Link href="/donate">
@@ -140,7 +148,7 @@ export default function Home() {
               național programelor: Civic Labs și Tech for Social Good.
             </div>
             <a rel="noopener noreferrer" target="_blank" href="mailto:contact@code4.md" className="mt-auto py-4 px-12 w-full bg-blue-900 hover:bg-blue-700 text-white text-center">
-                Hai să vorbim
+              Hai să vorbim
             </a>
 
           </div>
