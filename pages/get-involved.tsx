@@ -39,7 +39,11 @@ export default function Home() {
                   <h2 className="text-2xl font-bold text-blue-500">Dăruiește Timp</h2>
                 </div>
                 <div className="px-12 mb-8">
-                  <p className="text-gray-800">Avem nevoie de specialiști în următoarele domenii:</p>
+                  <p className="text-gray-800">
+                  Dacă ai cunoștințe și aptitudini de programist, te poți implica ca voluntar
+                  Code For Moldova la următorul HackDay. Hai să ne cunoaștem acolo și apoi,
+                  să dezvoltăm aplicații digitale care vor schimba vieți spre bine.
+                  </p>
 
                   <div className="my-12">
                     <div className="-mb-2">
@@ -72,8 +76,10 @@ export default function Home() {
                   </div>
 
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac sodales lobortis netus eu vestibulum
-                    justo dolor sit amet, consectetur adipiscing.
+                  Dacă posezi alte skill-uri din zona de comunicare, design, cercetare,
+                  organizare evenimente și ești gata să donezi timp pentru susținerea activității
+                  Code For Moldova, atunci trimite-ne mai multe detalii despre tine
+                  pe <a className="text-blue-500" href="mailto:contact@code4.md">contact@code4.md</a>
                   </p>
                 </div>
 
