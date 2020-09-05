@@ -24,9 +24,10 @@ export default function Home() {
             Implică-te
           </Heading>
           <p className="w-full sm:w-3/5 xl:w-3/5 mx-auto">
-            Implicarea activă a voluntarilor este baza succesului comunității noastre. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Convallis est, quis suspendisse nunc, odio et, ut amet. Arcu, erat malesuada
-            venenatis cum amet lectus vitae, ullamcorper nunc.
+            Implicarea ta contribuie la dezvoltarea societății noastre. Oferind câteva ore,
+            know-how-ul tău sau o donație oricât de mică, ne ajută să identificăm atât problemele
+            din comunitate cât și să dezvoltăm soluții digitale pentru o Moldovă mai bună.
+            Vino alături de noi și susține aplicațiile civice!
           </p>
         </Container>
         <Container className="xl:mb-8">
@@ -45,28 +46,28 @@ export default function Home() {
                       <span
                         className="inline-flex items-center px-5 py-1 mb-2 mr-2 text-blue-500 border border-blue-500 rounded-md"
                       >
-                      {rulerSvg} <span className="ml-2">Design</span>
-                    </span>
+                        {rulerSvg} <span className="ml-2">Design</span>
+                      </span>
                       <span
                         className="inline-flex items-center px-5 py-1 mb-2 mr-2 text-pink-500 border border-pink-500 rounded-md"
                       >
-                      {developerSvg} <span className="ml-2">Programare</span>
-                    </span>
+                        {developerSvg} <span className="ml-2">Programare</span>
+                      </span>
                       <span
                         className="inline-flex items-center px-5 py-1 mb-2 mr-2 text-indigo-500 border border-indigo-500 rounded-md"
                       >
-                      {searchSvg} <span className="ml-2">Cercetare</span>
-                    </span>
+                        {searchSvg} <span className="ml-2">Cercetare</span>
+                      </span>
                       <span
                         className="inline-flex items-center px-5 py-1 mb-2 mr-2 text-yellow-800 border border-yellow-800 rounded-md"
                       >
-                      {chatSvg} <span className="ml-2">Comunicare</span>
-                    </span>
+                        {chatSvg} <span className="ml-2">Comunicare</span>
+                      </span>
                       <span
                         className="inline-flex items-center px-5 py-1 mb-2 mr-2 text-gray-600 border border-gray-600 rounded-md"
                       >
-                      {plusSvg} <span className="ml-2">Alte</span>
-                    </span>
+                        {plusSvg} <span className="ml-2">Alte</span>
+                      </span>
                     </div>
                   </div>
 
@@ -140,7 +141,7 @@ export default function Home() {
               național programelor: Civic Labs și Tech for Social Good.
             </div>
             <a rel="noopener noreferrer" target="_blank" href="mailto:contact@code4.md" className="mt-auto py-4 px-12 w-full bg-blue-900 hover:bg-blue-700 text-white text-center">
-                Hai să vorbim
+              Hai să vorbim
             </a>
 
           </div>
