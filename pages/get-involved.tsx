@@ -97,8 +97,8 @@ export default function Home() {
                 </div>
                 <div className="px-12 mb-8">
                   <p className="text-gray-800">
-                    Code for Moldova se bazează pe voluntariat, însă activitatea noastră implică anumite cheltuieli,
-                    precum ar fi:
+                    Code for Moldova se bazează pe voluntariat, însă activitatea noastră
+                    implică multe cheltuieli, precum:
                   </p>
 
                   <div className="my-12 px-0 sm:px-8">
@@ -123,8 +123,9 @@ export default function Home() {
                   </div>
 
                   <p>
-                    Fiecare donație ajută la continuarea activității noastre. TU poți contribui la dezvoltarea unui
-                    proiect!
+                    Dacă îți plac <Link href="/solutions"><a className="text-blue-500">aplicațiile noastre</a></Link>,
+                    poți investi în ele printr-o donație. Fiecare donație ajută la continuarea
+                    activității noastre și la dezvoltarea și la mentenanța soluțiilor digitale pentru societate.
                   </p>
                 </div>
                 <Link href="/donate">
