@@ -1,18 +1,9 @@
 import React from 'react'
+import { Column } from '../components/column'
 import { Container } from '../components/container'
 import { Heading } from '../components/heading'
-import mihaelaTaranu from '../images/mihaela-taranu.jpeg'
-import tudorArnaut from '../images/tudor-arnaut.png'
-import ionMosnoi from '../images/ion-mosnoi.jpeg'
-import alexH from '../images/alex-h.jpeg'
-import andreiValcov from '../images/andrei-valcov.jpeg'
-import dionisieGhetu from '../images/dionisie-ghetu.jpeg'
-import anaParaschiv from '../images/ana-paraschiv.png'
-import andreiLuca from '../images/andrei-luca.jpeg'
-import marinaPorumb from '../images/marina-porumb.jpeg'
-import irinabuzu from '../images/irinabuzu.jpg'
 import { Row } from '../components/row'
-import { Column } from '../components/column'
+import { staffData } from '../data/staff-data'
 
 export function Staff() {
   return (
@@ -27,7 +18,7 @@ export function Staff() {
         </p>
 
         <Row className="-mb-12">
-          {we.map(person => (
+          {staffData.map(person => (
             <Column key={person.name} className="w-1/2 sm:w-1/3 md:w-1/4 mb-12">
               <div className="mb-4 relative" style={{ paddingBottom: '50%' }}>
                 <img src={person.image} alt={person.name} className="absolute h-full w-1/2 object-cover" />
@@ -63,68 +54,3 @@ export function Staff() {
     </section>
   )
 }
-
-// https://media.giphy.com/media/m9oruywyYbHL6A2wWp/giphy.gif
-const we = [
-  {
-    name: 'Mihaela Țaranu',
-    image: mihaelaTaranu,
-    role: 'Managing Director & Researcher',
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Tudor Arnăut',
-    image: tudorArnaut,
-    role: 'Researcher',
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Ion Moșnoi',
-    role: 'Chief Technology Officer',
-    image: ionMosnoi,
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Alex H',
-    role: 'Technology Officer',
-    image: alexH,
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Andrei Valcov',
-    role: 'UI/UX Designer',
-    image: andreiValcov,
-    linkedin: '#linkedin',
-    website: '#website',
-  },
-  {
-    name: 'Dionisie Ghețu',
-    role: 'UI/UX Designer',
-    image: dionisieGhetu,
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Ana Paraschiv',
-    role: 'UX Designer',
-    image: anaParaschiv,
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Andrei Luca',
-    role: 'Technology Officer',
-    image: andreiLuca,
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Marina Porumb',
-    role: 'PR & Communication Officer',
-    image: marinaPorumb,
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Irina Buzu',
-    role: 'Legal Reseacher',
-    image: irinabuzu,
-    linkedin: '#linkedin',
-  },
-]

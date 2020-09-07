@@ -1,9 +1,9 @@
 import React from 'react'
+import { Column } from '../components/column'
 import { Container } from '../components/container'
 import { Heading } from '../components/heading'
-import heroImage from '../images/civic-good.svg'
 import { Row } from '../components/row'
-import { Column } from '../components/column'
+import { volunteersData } from '../data/volunteers-data'
 
 export function Volunteers() {
   return (
@@ -18,7 +18,7 @@ export function Volunteers() {
         </p>
 
         <Row className="-mb-12">
-          {we.map(person => (
+          {volunteersData.map(person => (
             <Column key={person.name} className="w-1/2 sm:w-1/3 md:w-1/4 mb-12">
               <div className="mb-4 relative" style={{ paddingBottom: '50%' }}>
                 <img src={person.image} alt={person.name} className="absolute h-full w-1/2 object-cover" />
@@ -54,44 +54,3 @@ export function Volunteers() {
     </section>
   )
 }
-
-// https://media.giphy.com/media/m9oruywyYbHL6A2wWp/giphy.gif
-const we = [
-  {
-    name: 'Evghenii Borozan',
-    image: heroImage,
-    role: 'Designer UX/UI',
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Valerii Fazli',
-    image: heroImage,
-    role: 'Frontend',
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Alexandru Ciornii',
-    role: 'Backend',
-    image: heroImage,
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Vasile Catana',
-    role: 'Backend',
-    image: heroImage,
-    linkedin: '#linkedin',
-  },
-  {
-    name: 'Eigeniu Cempoi',
-    role: 'Maps Engineer',
-    image: heroImage,
-    linkedin: '#linkedin',
-    website: '#website',
-  },
-  {
-    name: 'Nicu Lucas',
-    role: 'Frontend',
-    image: heroImage,
-    linkedin: '#linkedin',
-  },
-]
