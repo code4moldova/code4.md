@@ -19,7 +19,9 @@ export default function AboutUs() {
       <AboutUsHero />
       <section className="bg-yellow-400 lg:h-0 flex items-center justify-center">
         <div className="bg-yellow-400 text-center p-16">
-          <Heading tag="h1" className="text-3xl">Misiunea noastră</Heading>
+          <Heading tag="h1" className="text-3xl">
+            Misiunea noastră
+          </Heading>
           <p>Să creem o comunitatea activă care va oferi suport în digitalizarea Moldovei.</p>
         </div>
       </section>

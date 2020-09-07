@@ -50,7 +50,6 @@ export function Volunteers() {
             </Column>
           ))}
         </Row>
-
       </Container>
     </section>
   )
@@ -94,5 +93,5 @@ const we = [
     role: 'Frontend',
     image: heroImage,
     linkedin: '#linkedin',
-  }
+  },
 ]

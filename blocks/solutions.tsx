@@ -12,7 +12,6 @@ export function Solutions() {
   return (
     <section className="bg-gray-100 py-5 md:py-16">
       <Container>
-
         <div className="flex justify-between items-center mb-5 md:mb-10">
           <Heading tag="h1" className="text-3xl">
             Soluții IT
@@ -28,15 +27,9 @@ export function Solutions() {
           <Column className="mb-4 w-full md:w-1/3">
             <div className="bg-white h-full">
               <div className="relative" style={{ paddingBottom: '75%' }}>
-                <img
-                  className="absolute w-full h-full object-cover"
-                  src={girl}
-                  alt="Girl pressing door buttons"
-                />
+                <img className="absolute w-full h-full object-cover" src={girl} alt="Girl pressing door buttons" />
                 <div className="absolute w-full h-full flex items-center justify-end p-8 sm:p-16 md:p-8 lg:p-16">
-                  <h2
-                    className="uppercase text-3xl sm:text-4xl md:text-2xl lg:text-3xl text-white font-bold text-right"
-                  >
+                  <h2 className="uppercase text-3xl sm:text-4xl md:text-2xl lg:text-3xl text-white font-bold text-right">
                     Inițiativa
                     <br />
                     <span className="text-yellow-400">Împreună</span>
@@ -58,15 +51,9 @@ export function Solutions() {
           <Column className="mb-4 w-full md:w-1/3">
             <div className="bg-white h-full">
               <div className="relative" style={{ paddingBottom: '75%' }}>
-                <img
-                  className="absolute w-full h-full object-cover"
-                  src={covidCell}
-                  alt="Coronvirus image"
-                />
+                <img className="absolute w-full h-full object-cover" src={covidCell} alt="Coronvirus image" />
                 <div className="absolute w-full h-full flex items-center justify-end p-8 sm:p-16 md:p-8 lg:p-16">
-                  <h2
-                    className="uppercase text-3xl sm:text-4xl md:text-2xl lg:text-3xl text-white font-bold text-right"
-                  >
+                  <h2 className="uppercase text-3xl sm:text-4xl md:text-2xl lg:text-3xl text-white font-bold text-right">
                     Centru de
                     <br />
                     Informare
@@ -84,15 +71,10 @@ export function Solutions() {
           <Column className="mb-4 w-full md:w-1/3">
             <div className="bg-white h-full">
               <div className="relative" style={{ paddingBottom: '75%' }}>
-                <img
-                  className="absolute w-full h-full object-cover" src={girl}
-                  alt="Sunset in the mountains"
-                />
+                <img className="absolute w-full h-full object-cover" src={girl} alt="Sunset in the mountains" />
                 <div className="absolute w-full h-full bg-gray-700 opacity-75" />
                 <div className="absolute w-full h-full flex items-center justify-end p-8 sm:p-16 md:p-8 lg:p-16">
-                  <h2
-                    className="uppercase text-3xl sm:text-4xl md:text-2xl lg:text-3xl text-white font-bold text-right"
-                  >
+                  <h2 className="uppercase text-3xl sm:text-4xl md:text-2xl lg:text-3xl text-white font-bold text-right">
                     Inițiativa
                     <br />
                     <span className="text-yellow-400">Împreună</span>
