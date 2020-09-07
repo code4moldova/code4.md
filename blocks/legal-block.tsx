@@ -1,8 +1,6 @@
 import React from 'react'
 import { Container } from '../components/container'
 import { Heading } from '../components/heading'
-import { Row } from '../components/row'
-import { Column } from '../components/column'
 
 export function LegalBlock() {
   return (
