@@ -9,15 +9,14 @@ type Props = {
 }
 
 export const Button = React.forwardRef<any, Props>((props, ref) => {
-    const { children, buttonType = 'primary', buttonSize = 'base', ...rest } = props
-    const child = React.Children.only(children)
-    return React.cloneElement(child, {
-      ...rest,
-      className: clsx(child?.props?.className, ButtonType[buttonType], ButtonSize[buttonSize]),
-      ref,
-    })
-  },
-)
+  const { children, buttonType = 'primary', buttonSize = 'base', ...rest } = props
+  const child = React.Children.only(children)
+  return React.cloneElement(child, {
+    ...rest,
+    className: clsx(child?.props?.className, ButtonType[buttonType], ButtonSize[buttonSize]),
+    ref,
+  })
+})
 
 const ButtonType = {
   'primary': 'border-2 border-blue-700 bg-blue-700 text-white hover:border-blue-900 hover:bg-blue-900',

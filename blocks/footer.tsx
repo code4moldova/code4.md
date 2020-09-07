@@ -19,7 +19,7 @@ export function Footer() {
                 <Link href="/our-sponsors">
                   <a className="text-sm">Parteneri</a>
                 </Link>
-                <br/>
+                <br />
                 <Link href="/our-sponsors">
                   <a className="text-sm">Susținători</a>
                 </Link>
@@ -28,13 +28,15 @@ export function Footer() {
                 <Link href="/legal">
                   <a className="text-sm">Cod de conduită</a>
                 </Link>
-                <br/>
+                <br />
                 <Link href="/legal">
                   <a className="text-sm">Legal</a>
                 </Link>
               </div>
               <div>
-                <a href="mailto:contact@code4.md" className="text-sm">Contacte</a>
+                <a href="mailto:contact@code4.md" className="text-sm">
+                  Contacte
+                </a>
               </div>
             </div>
           </Column>
@@ -73,9 +75,7 @@ export function Footer() {
             </a>
           </Column>
         </Row>
-        <p className="text-center text-gray-500 text-xs my-5">
-          Code4Moldova © 2020 All Rights Reserved
-        </p>
+        <p className="text-center text-gray-500 text-xs my-5">Code4Moldova © 2020 All Rights Reserved</p>
       </Container>
     </section>
   )

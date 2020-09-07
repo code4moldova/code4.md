@@ -20,8 +20,7 @@ export function Hero() {
             </Heading>
             <p className="mb-12 xl:mr-32">
               <b>Code for Moldova</b> este o asociație obștească apolitică, neguvernamentală și non-profit. Prima
-              Asociație
-              Civic-Tech din Moldova, care vine să soluționeze probleme societății prin soft-uri și platforme.
+              Asociație Civic-Tech din Moldova, care vine să soluționeze probleme societății prin soft-uri și platforme.
             </p>
 
             <div>
@@ -41,7 +40,8 @@ export function Hero() {
             <img
               src={heroImage}
               className="absolute lg:static inset-0 w-full h-full object-cover"
-              alt="typing on keyboard" />
+              alt="typing on keyboard"
+            />
             <div className="absolute lg:hidden inset-0 bg-white opacity-75" />
           </Column>
         </Row>

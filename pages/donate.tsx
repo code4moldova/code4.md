@@ -70,47 +70,35 @@ export default function Donate() {
             <Column className="w-full xl:w-1/2 mb-8">
               <div className="bg-white p-12 border-t-8 border-blue-500 h-full">
                 <h2 className="text-2xl font-bold text-blue-500 mb-8">Donează prin transfer bancar</h2>
-                <p className="text-gray-800 mb-8">Rechizite bancare pentru transferuri în <strong>MDL</strong>:</p>
+                <p className="text-gray-800 mb-8">
+                  Rechizite bancare pentru transferuri în <strong>MDL</strong>:
+                </p>
                 <dl>
                   <div className="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt className="text-sm leading-5 font-medium text-gray-500">
-                      Denumirea Clientului:
-                    </dt>
+                    <dt className="text-sm leading-5 font-medium text-gray-500">Denumirea Clientului:</dt>
                     <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
                       AO "CODE FOR MOLDOVA"s
                     </dd>
                   </div>
                   <div className="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt className="text-sm leading-5 font-medium text-gray-500">
-                      IBAN (cont curent):
-                    </dt>
+                    <dt className="text-sm leading-5 font-medium text-gray-500">IBAN (cont curent):</dt>
                     <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
                       MD56ML000000002251967325
                     </dd>
                   </div>
                   <div className="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt className="text-sm leading-5 font-medium text-gray-500">
-                      Codul fiscal:
-                    </dt>
-                    <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-                      1020620002933
-                    </dd>
+                    <dt className="text-sm leading-5 font-medium text-gray-500">Codul fiscal:</dt>
+                    <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">1020620002933</dd>
                   </div>
                   <div className="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt className="text-sm leading-5 font-medium text-gray-500">
-                      Denumirea Bancii:
-                    </dt>
+                    <dt className="text-sm leading-5 font-medium text-gray-500">Denumirea Bancii:</dt>
                     <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
                       BC “Moldindconbank” SA suc. “Vasile Alecsandri”
                     </dd>
                   </div>
                   <div className="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
-                    <dt className="text-sm leading-5 font-medium text-gray-500">
-                      Codul bancar:
-                    </dt>
-                    <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-                      MOLDMD2X367
-                    </dd>
+                    <dt className="text-sm leading-5 font-medium text-gray-500">Codul bancar:</dt>
+                    <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">MOLDMD2X367</dd>
                   </div>
                 </dl>
               </div>
@@ -124,7 +112,9 @@ export default function Donate() {
                       <img src="https://picsum.photos/500/200" alt="paypal" />
                     </dt>
                     <dd className="col-span-2">
-                      <a href="#" className="underline text-blue-500 mb-4 inline-block">Donează prin PayPal</a>
+                      <a href="#" className="underline text-blue-500 mb-4 inline-block">
+                        Donează prin PayPal
+                      </a>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </dd>
                   </div>
@@ -133,7 +123,9 @@ export default function Donate() {
                       <img src="https://picsum.photos/500/200" alt="paypal" />
                     </dt>
                     <dd className="col-span-2">
-                      <a href="#" className="underline text-blue-500 mb-4 inline-block">Donează prin X</a>
+                      <a href="#" className="underline text-blue-500 mb-4 inline-block">
+                        Donează prin X
+                      </a>
                       <p>Adipiscing elit egestas in tellus adipiscing orci morbi amet tortor.</p>
                     </dd>
                   </div>

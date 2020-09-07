@@ -10,7 +10,9 @@ export function OurActivity() {
   return (
     <section className="py-16 sm:py-24">
       <Container>
-        <Heading tag="h1" className="text-center md:text-left text-3xl mb-20">Activitatea noastră</Heading>
+        <Heading tag="h1" className="text-center md:text-left text-3xl mb-20">
+          Activitatea noastră
+        </Heading>
 
         <Row>
           <Column className="w-full lg:w-1/2">
@@ -20,7 +22,7 @@ export function OurActivity() {
                 <Heading
                   tag="h1"
                   className="text-3xl inline-block mb-10 border-current border-b-2"
-                  style={{ color: '#024BBB'}}>
+                  style={{ color: '#024BBB' }}>
                   Civic Labs
                 </Heading>
               </a>
@@ -38,7 +40,7 @@ export function OurActivity() {
                 <Heading
                   tag="h1"
                   className="text-3xl inline-block mb-10 border-current border-b-2"
-                  style={{ color: '#6E662B'}}>
+                  style={{ color: '#6E662B' }}>
                   Tech For Social Good
                 </Heading>
               </a>

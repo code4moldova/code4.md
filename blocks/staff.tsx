@@ -59,7 +59,6 @@ export function Staff() {
             </Column>
           ))}
         </Row>
-
       </Container>
     </section>
   )
