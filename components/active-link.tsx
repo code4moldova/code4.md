@@ -13,14 +13,13 @@ type Props = React.PropsWithChildren<
 
 export function ActiveLink(props: Props) {
   const { children, classNameActive = '', classNameInactive = '', ...rest } = props
-  const child = React.Children.only(children)
-  const childClassName = child?.props?.className
+  const child: ReactElement = React.Children.only(children)
   const router = useRouter()
 
   return (
     <Link {...rest}>
       {React.cloneElement(child, {
-        className: clsx(childClassName, {
+        className: clsx(child.props.className, {
           [classNameActive]: router.pathname === props.href,
           [classNameInactive]: router.pathname !== props.href,
         }),
