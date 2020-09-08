@@ -5,8 +5,7 @@ import { Column } from '../components/column'
 import { Container } from '../components/container'
 import { Heading } from '../components/heading'
 import { Row } from '../components/row'
-import covidCell from '../images/covid-cell.png'
-import girl from '../images/girl-pressing-door-buttons.jpeg'
+import { solutionsData } from '../data/solutions-data'
 
 export function Solutions() {
   return (
@@ -24,75 +23,22 @@ export function Solutions() {
         </div>
 
         <Row>
-          <Column className="mb-4 w-full md:w-1/3">
-            <div className="bg-white h-full">
-              <div className="relative" style={{ paddingBottom: '75%' }}>
-                <img className="absolute w-full h-full object-cover" src={girl} alt="Girl pressing door buttons" />
-                <div className="absolute w-full h-full flex items-center justify-end p-8 sm:p-16 md:p-8 lg:p-16">
-                  <h2 className="uppercase text-3xl sm:text-4xl md:text-2xl lg:text-3xl text-white font-bold text-right">
-                    Inițiativa
-                    <br />
-                    <span className="text-yellow-400">Împreună</span>
-                    <br />
-                    <span className="text-yellow-400">împotriva</span>
-                    <br />
-                    <span className="text-yellow-400">COVID-19</span>
-                  </h2>
+          {solutionsData.map(solution => (
+            <Column key={solution.title} className="mb-4 w-full md:w-1/3">
+              <div className="bg-white h-full">
+                <div className="relative" style={{ paddingBottom: '75%' }}>
+                  <img className="absolute w-full h-full object-cover" src={solution.image} alt="" />
+                  <div className="absolute w-full h-full flex items-center justify-center">
+                    <img className="w-42 h-42" src={solution.icon} alt="" />
+                  </div>
+                </div>
+                <div className="px-6 py-4">
+                  <div className="font-bold text-lg mb-2">{solution.title}</div>
+                  <p className="text-gray-700 text-base">{solution.description}</p>
                 </div>
               </div>
-              <div className="px-6 py-4">
-                <div className="font-bold text-lg mb-2">voluntar.md</div>
-                <p className="text-gray-700 text-base">
-                  Platforma care conectează persoanele care au nevoie de ajutor cu cele care doresc să ajute.
-                </p>
-              </div>
-            </div>
-          </Column>
-          <Column className="mb-4 w-full md:w-1/3">
-            <div className="bg-white h-full">
-              <div className="relative" style={{ paddingBottom: '75%' }}>
-                <img className="absolute w-full h-full object-cover" src={covidCell} alt="Coronvirus image" />
-                <div className="absolute w-full h-full flex items-center justify-end p-8 sm:p-16 md:p-8 lg:p-16">
-                  <h2 className="uppercase text-3xl sm:text-4xl md:text-2xl lg:text-3xl text-white font-bold text-right">
-                    Centru de
-                    <br />
-                    Informare
-                  </h2>
-                </div>
-              </div>
-              <div className="px-6 py-4">
-                <div className="font-bold text-lg mb-2">info.c19.md</div>
-                <p className="text-gray-700 text-base">
-                  Portal informativ cu privire la situația creată de COVID-19 în Moldova.
-                </p>
-              </div>
-            </div>
-          </Column>
-          <Column className="mb-4 w-full md:w-1/3">
-            <div className="bg-white h-full">
-              <div className="relative" style={{ paddingBottom: '75%' }}>
-                <img className="absolute w-full h-full object-cover" src={girl} alt="Sunset in the mountains" />
-                <div className="absolute w-full h-full bg-gray-700 opacity-75" />
-                <div className="absolute w-full h-full flex items-center justify-end p-8 sm:p-16 md:p-8 lg:p-16">
-                  <h2 className="uppercase text-3xl sm:text-4xl md:text-2xl lg:text-3xl text-white font-bold text-right">
-                    Inițiativa
-                    <br />
-                    <span className="text-yellow-400">Împreună</span>
-                    <br />
-                    <span className="text-yellow-400">împotriva</span>
-                    <br />
-                    <span className="text-yellow-400">COVID-19</span>
-                  </h2>
-                </div>
-              </div>
-              <div className="px-6 py-4">
-                <div className="font-bold text-lg mb-2">voluntar.md</div>
-                <p className="text-gray-700 text-base">
-                  Platforma care conectează persoanele care au nevoie de ajutor cu cele care doresc să ajute.
-                </p>
-              </div>
-            </div>
-          </Column>
+            </Column>
+          ))}
         </Row>
       </Container>
     </section>
