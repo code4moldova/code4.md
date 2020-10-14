@@ -4,6 +4,10 @@ import logo from '../images/logo.png'
 import { Row } from '../components/row'
 import { Column } from '../components/column'
 import Link from 'next/link'
+import vercelLogo from '../images/vercel.svg'
+
+const repoName = encodeURIComponent('code4moldova/code4.md')
+const vercelLink = `https://vercel.com?utm_source=${repoName}&utm_campaign=oss`
 
 export function Footer() {
   return (
@@ -75,6 +79,12 @@ export function Footer() {
             </a>
           </Column>
         </Row>
+        <div className="flex justify-center my-5">
+          <a href={vercelLink} target="_blank" className="inline-flex items-end">
+            <span className="font-bold mr-1 text-xs text-gray-500 uppercase flex-shrink-0">Powered by</span>
+            <img src={vercelLogo} className="h-5" alt="" />
+          </a>
+        </div>
         <p className="text-center text-gray-500 text-xs my-5">Code4Moldova © 2020 All Rights Reserved</p>
       </Container>
     </section>
