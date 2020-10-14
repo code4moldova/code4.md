@@ -80,7 +80,7 @@ export function Footer() {
           </Column>
         </Row>
         <div className="flex justify-center my-5">
-          <a href={vercelLink} target="_blank" className="inline-flex items-end">
+          <a href={vercelLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-end">
             <span className="font-bold mr-1 text-xs text-gray-500 uppercase flex-shrink-0">Powered by</span>
             <img src={vercelLogo} className="h-5" alt="" />
           </a>

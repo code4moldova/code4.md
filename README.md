@@ -31,6 +31,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Powered by
 
-<a href="https://vercel.com/?utm_source=code4moldova%2Fcode4.md&utm_campaign=oss">
+<a href="https://vercel.com/?utm_source=code4moldova%2Fcode4.md&utm_campaign=oss" target="_blank" rel="noopener noreferrer">
     <img width="200px" height="auto" src="./images/vercel.svg" alt="vercel logo" />
 </a>
