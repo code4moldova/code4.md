@@ -6,9 +6,6 @@ import { Column } from '../components/column'
 import Link from 'next/link'
 import vercelLogo from '../images/vercel.svg'
 
-const repoName = encodeURIComponent('code4moldova/code4.md')
-const vercelLink = `https://vercel.com?utm_source=${repoName}&utm_campaign=oss`
-
 export function Footer() {
   return (
     <section className="py-5">
@@ -80,7 +77,11 @@ export function Footer() {
           </Column>
         </Row>
         <div className="flex justify-center my-5">
-          <a href={vercelLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-end">
+          <a
+            href="https://vercel.com?utm_source=code4-md&utm_campaign=oss"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-end">
             <span className="font-bold mr-1 text-xs text-gray-500 uppercase flex-shrink-0">Powered by</span>
             <img src={vercelLogo} className="h-5" alt="" />
           </a>
