@@ -109,13 +109,24 @@ export default function Donate() {
                 <dl>                  
                   <div className="mb-8 grid grid-cols-3 gap-4">
                      <dt>
-                      <img width=500 height=200 src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/1200px-PayPal_logo.svg.png" alt="paypal" />
+                      <img width="500" height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/1200px-PayPal_logo.svg.png" alt="paypal" />
                     </dt>
                     <dd className="col-span-2">
                       <a href="https://paypal.me/code4md?locale.x=en_US" className="underline text-blue-500 mb-4 inline-block">
                         Donează prin PayPal
                       </a>
                       <p>Sustine Code4Moldova pentru a schimba Moldova spre bine.</p>
+                    </dd>
+                  </div>
+                  <div className="mb-8 grid grid-cols-3 gap-4">
+                    <dt>
+                      <img src="https://picsum.photos/500/200" alt="paypal" />
+                    </dt>
+                    <dd className="col-span-2">
+                      <a href="#" className="underline text-blue-500 mb-4 inline-block">
+                        Donează prin X
+                      </a>
+                      <p>Adipiscing elit egestas in tellus adipiscing orci morbi amet tortor.</p>
                     </dd>
                   </div>
                 </dl>
