@@ -36,13 +36,9 @@ export function Solutions() {
                   <div className="font-bold text-lg mb-2">{solution.title}</div>
                   <p className="text-gray-700 text-base">{solution.description}</p>
                   <div className="mt-2">
-                    {solution.website ? (
-                      <a href={solution.website} target="_blank" className="hover:underline text-blue-500">
-                        Vizitează
-                      </a>
-                    ) : (
-                      ''
-                    )}
+                    <a href={solution.website} target="_blank" className="hover:underline text-blue-500">
+                      Vizitează
+                    </a>
                   </div>
                 </div>
               </div>
