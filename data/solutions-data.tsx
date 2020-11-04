@@ -8,18 +8,21 @@ import moldovaSvg from '../images/moldova.svg'
 export const solutionsData = [
   {
     title: 'voluntar.md',
+    website: 'https://voluntar.md/',
     description: 'Platforma care conectează persoanele care au nevoie de ajutor cu cele care doresc să ajute.',
     image: girl,
     icon: moldovaSvg,
   },
   {
     title: 'info.c19.md',
+    website: 'http://info.c19.md/',
     description: 'Portal informativ cu privire la situația creată de COVID-19 în Moldova.',
     image: covidCell,
     icon: covidSvg,
   },
   {
     title: 'ajut.md',
+    website: 'http://ajut.md/',
     description:
       'Platforma care sprijină societatea civilă și implementarea proiectelor civice prin colectarea de materiale, bani și timp.',
     image: helpPeople,

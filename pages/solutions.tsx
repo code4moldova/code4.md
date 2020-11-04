@@ -8,8 +8,6 @@ import { Container } from '../components/container'
 import { Heading } from '../components/heading'
 import { Row } from '../components/row'
 import { solutionsData } from '../data/solutions-data'
-import covidCell from '../images/covid-cell.png'
-import girl from '../images/girl-pressing-door-buttons.jpeg'
 
 export default function Solutions() {
   return (
@@ -42,6 +40,15 @@ export default function Solutions() {
                   <div className="px-6 py-4">
                     <div className="font-bold text-lg mb-2">{solution.title}</div>
                     <p className="text-gray-700 text-base">{solution.description}</p>
+                    <div className="mt-2">
+                      {solution.website ? (
+                        <a href={solution.website} target="_blank" className="hover:underline text-blue-500">
+                          Vizitează
+                        </a>
+                      ) : (
+                        ''
+                      )}
+                    </div>
                   </div>
                 </div>
               </Column>
