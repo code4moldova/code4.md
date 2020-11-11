@@ -4,6 +4,7 @@ import React from 'react'
 import { BeWithUs } from '../../blocks/be-with-us'
 import { Footer } from '../../blocks/footer'
 import { Header } from '../../blocks/header'
+import { BackButton } from '../../blocks/back-button'
 import { Container } from '../../components/container'
 import { Heading } from '../../components/heading'
 import { useRouter } from 'next/router'
@@ -25,6 +26,7 @@ export default function Solution() {
         <title>Implică-te / Code 4 Moldova</title>
       </Head>
       <Header />
+      <BackButton />
       <section className="bg-gray-200 p-5 lg:p-10">
         {/** Main block */}
         <div className="container mx-auto bg-white lg:flex lg:items-stretch px-0">
