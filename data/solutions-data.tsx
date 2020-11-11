@@ -25,12 +25,14 @@ export const solutionsData = [
       '</ul>',
     image: girl,
     icon: moldovaSvg,
-    status: 'Finisat',
+    status: 'finisat',
     mainTheme: 'covid19',
     tags: ['social', 'voluntariat'],
     launchDate: '20.04.2020',
     scope:
       'Oferi sprijin Departamentului de Asistență Socială în oferirea suportului de bunuri pentru persoanele nevoiașe.',
+    report:
+      'https://www.scribd.com/embeds/475134849/content?start_page=1&view_mode=scroll&access_key=key-vIda9HDZrb4iIfYrVbow',
   },
   {
     slug: 'info-c19-md',
@@ -52,12 +54,13 @@ export const solutionsData = [
       '</ul>',
     image: covidCell,
     icon: covidSvg,
-    status: 'Finisat',
+    status: 'finisat',
     mainTheme: 'covid19',
     tags: ['social', 'voluntariat'],
     launchDate: '17.03.2020',
     scope:
       'Oferi suport informațional populației din surse sigure; combaterea dezinformării la situația legată de COVID-19 în Moldova.',
+    report: null,
   },
   {
     slug: 'ajut-md',
@@ -83,5 +86,7 @@ export const solutionsData = [
     launchDate: null,
     scope:
       'Să sprijine societatea civilă și implementarea proiectelor sociale prin donații de bunuri, financiare și de timp.',
+    report:
+      'https://www.scribd.com/embeds/475136713/content?start_page=1&view_mode=scroll&access_key=key-bgUE95Bv6SwQixam7Myg',
   },
 ]
