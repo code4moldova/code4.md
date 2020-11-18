@@ -4,6 +4,7 @@ import React from 'react'
 import { BeWithUs } from '../../blocks/be-with-us'
 import { Footer } from '../../blocks/footer'
 import { Header } from '../../blocks/header'
+import { Partners } from '../../blocks/partners'
 import { BackButton } from '../../components/back-button'
 import { Container } from '../../components/container'
 import { Heading } from '../../components/heading'
@@ -37,7 +38,7 @@ export default function Solution() {
               alt={solution.longTitle}
             />
           </div>
-          <div className="lg:w-1/2 py-12 px-12">
+          <div className="lg:w-1/2 py-5 md:py-12 px-5 md:px-12">
             <Heading tag="h1" className="text-4xl text-blue-700 leading-none mb-2">
               {solution.longTitle}
             </Heading>
@@ -57,7 +58,9 @@ export default function Solution() {
                 ''
               )}
               {solution.tags.map(tag => (
-                <span className="inline-block border border-orange-700 text-orange-700 mr-3 mb-2 px-2 rounded-full">
+                <span
+                  key={tag}
+                  className="inline-block border border-orange-700 text-orange-700 mr-3 mb-2 px-2 rounded-full">
                   {tag}
                 </span>
               ))}
@@ -91,7 +94,7 @@ export default function Solution() {
         </div>
 
         {/** Description block */}
-        <Container className="bg-gray-100 py-12 px-12">
+        <Container className="bg-gray-100 py-5 md:py-12 px-5 md:px-12">
           <Heading tag="h2" className="text-2xl mb-10">
             Descriere
           </Heading>
@@ -102,8 +105,9 @@ export default function Solution() {
           />
         </Container>
 
+        {/** Raport block */}
         {solution.report ? (
-          <Container className="bg-gray-100 pb-12 px-12">
+          <Container className="bg-gray-100 pb-5 md:pb-12 px-5 md:px-12">
             <Heading tag="h2" className="text-2xl mb-10">
               Raport
             </Heading>
@@ -125,7 +129,11 @@ export default function Solution() {
           ''
         )}
 
-        <BeWithUs />
+        <Container className="bg-gray-100 pb-24 px-12">
+          <Partners />
+        </Container>
+
+        <BeWithUs sectionClass="-mt-24" />
       </section>
       <Footer />
     </React.Fragment>

@@ -25,7 +25,7 @@ export const solutionsData = [
       '</ul>',
     image: girl,
     icon: moldovaSvg,
-    status: 'finisat',
+    status: null,
     mainTheme: 'covid19',
     tags: ['social', 'voluntariat'],
     launchDate: '20.04.2020',

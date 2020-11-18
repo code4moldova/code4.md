@@ -4,9 +4,13 @@ import { Button } from '../components/button'
 import { Container } from '../components/container'
 import { Heading } from '../components/heading'
 
-export function BeWithUs() {
+type Props = React.PropsWithChildren<{
+  sectionClass?: string
+}>
+
+export function BeWithUs({ sectionClass = 'py-3 md:py-24' }: Props) {
   return (
-    <section className="py-3 md:py-24">
+    <section className={sectionClass}>
       <Container className="flex justify-center">
         <div className="bg-blue-200 py-16 px-3 sm:px-24 text-center">
           <Heading tag="h3" className="text-xl mb-6">
