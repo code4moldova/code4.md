@@ -5,7 +5,25 @@ import helpSvg from '../images/ajut.svg'
 import covidSvg from '../images/covid.svg'
 import moldovaSvg from '../images/moldova.svg'
 
-export const solutionsData = [
+export interface Solution {
+  slug: string
+  title: string
+  longTitle: string
+  website: string
+  githubRepository: string
+  description: string
+  longDescription: string
+  image: string
+  icon: string
+  status: string | null
+  mainTheme: string | null
+  tags: string[]
+  launchDate: string | null
+  scope: string
+  report: string | undefined
+}
+
+export const solutionsData: Solution[] = [
   {
     slug: 'voluntar-md',
     title: 'voluntar.md',
@@ -60,7 +78,7 @@ export const solutionsData = [
     launchDate: '17.03.2020',
     scope:
       'Oferi suport informațional populației din surse sigure; combaterea dezinformării la situația legată de COVID-19 în Moldova.',
-    report: null,
+    report: undefined,
   },
   {
     slug: 'ajut-md',
