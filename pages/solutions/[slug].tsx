@@ -5,6 +5,7 @@ import { BeWithUs } from '../../blocks/be-with-us'
 import { Footer } from '../../blocks/footer'
 import { Header } from '../../blocks/header'
 import { Partners } from '../../blocks/partners'
+import { OtherSolutions } from '../../blocks/other-solutions'
 import { BackButton } from '../../components/back-button'
 import { Container } from '../../components/container'
 import { Heading } from '../../components/heading'
@@ -129,11 +130,16 @@ export default function Solution() {
           ''
         )}
 
+        {/** Partners block */}
         <Container className="bg-gray-100 pb-24 px-12">
           <Partners />
         </Container>
 
+        {/** BeWithUs block */}
         <BeWithUs sectionClass="-mt-24" />
+
+        {/** Other projects block */}
+        <OtherSolutions />
       </section>
       <Footer />
     </React.Fragment>

@@ -7,6 +7,7 @@ import stisc from '../images/sponsors/stisc.png'
 import diez from '../images/sponsors/diez.png'
 import digitalpark from '../images/sponsors/digitalpark.png'
 import initiativaCovid from '../images/sponsors/initiativa-covid.png'
+import { partnersData } from '../data/partners-data'
 
 export function Partners() {
   return (
@@ -17,18 +18,13 @@ export function Partners() {
         </Heading>
 
         <Row>
-          <Column className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
-            <img className="w-full" src={stisc} alt="" />
-          </Column>
-          <Column className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
-            <img className="w-full" src={diez} alt="" />
-          </Column>
-          <Column className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
-            <img className="w-full" src={digitalpark} alt="" />
-          </Column>
-          <Column className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
-            <img className="w-full" src={initiativaCovid} alt="" />
-          </Column>
+          {partnersData.map(partner => (
+            <Column key={partner.name} className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
+              <a href={partner.website} title={partner.name} target="_blank">
+                <img className="w-full" src={partner.image} alt={partner.name} />
+              </a>
+            </Column>
+          ))}
         </Row>
       </Container>
     </section>
