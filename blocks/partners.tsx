@@ -3,28 +3,26 @@ import { Container } from '../components/container'
 import { Row } from '../components/row'
 import { Column } from '../components/column'
 import { Heading } from '../components/heading'
+import { partnersData } from '../data/partners-data'
 
 export function Partners() {
   return (
-    <section className="bg-gray-100 py-5 md:py-16">
+    <section>
       <Container>
-        <Heading tag="h1" className="text-3xl mb-5 md:mb-10 mx-10 md:mx-0">
-          Parteneri
-        </Heading>
+        <Row>
+          <Heading tag="h1" className="text-3xl mb-5 md:mb-10 mx-10 md:mx-0">
+            Parteneri
+          </Heading>
+        </Row>
 
         <Row>
-          <Column className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
-            <img className="w-full" src="https://picsum.photos/550/205" alt="" />
-          </Column>
-          <Column className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
-            <img className="w-full" src="https://picsum.photos/550/205" alt="" />
-          </Column>
-          <Column className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
-            <img className="w-full" src="https://picsum.photos/550/205" alt="" />
-          </Column>
-          <Column className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
-            <img className="w-full" src="https://picsum.photos/550/205" alt="" />
-          </Column>
+          {partnersData.map(partner => (
+            <Column key={partner.name} className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
+              <a href={partner.website} title={partner.name} target="_blank">
+                <img className="w-full" src={partner.image} alt={partner.name} />
+              </a>
+            </Column>
+          ))}
         </Row>
       </Container>
     </section>
