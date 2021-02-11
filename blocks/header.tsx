@@ -9,7 +9,7 @@ const menuItems = [
   { title: 'Despre noi', url: '/about-us' },
   { title: 'Comunitate', url: '/community' },
   { title: 'Soluții IT', url: '/solutions' },
-  { title: 'Blog', url: '#blog' },
+  { title: 'Blog', url: '/blog' },
 ]
 
 export function Header() {
