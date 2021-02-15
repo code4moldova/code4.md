@@ -10,7 +10,7 @@ const blog = () => {
     return (
         <>
             <Head>
-                <title>Despre noi / Code 4 Moldova</title>
+                <title>Blog  / Code 4 Moldova</title>
             </Head>
             <Header />
             <BlogLatest />

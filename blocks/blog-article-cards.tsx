@@ -13,7 +13,7 @@ const BlogArticleCards = () => {
                     {blogData.map(article => (
                         <Column key={article.title} className="w-1/2 md:w-1/3 mb-12 cursor-pointer">
                             <div className="mb-4 relative" style={{}}>
-                                <img src={article.images[0]} alt={article.title} className=" object-cover" />
+                                <img src={article.image} alt={article.title} className=" object-cover" />
                             </div>
 
                             <div className="flex flex-col gap-2">

@@ -13,6 +13,9 @@ type Props = React.PropsWithChildren<{
 }>
 
 const BlogArticle = ({ article }: Props) => {
+
+    const articleParts = article.content.text;
+
     return (
         <>
             <Head>
@@ -25,7 +28,7 @@ const BlogArticle = ({ article }: Props) => {
                     <Link href="/blog" >
                         <p className="text-blue-600 cursor-pointer">{`<- înapoi`}</p>
                     </Link>
-                    <Heading tag="h5" className="text-2xl">
+                    <Heading tag="h1" className="text-2xl">
                         {article.title}
                     </Heading>
                     <div className="flex flex-wrap text-gray-400  justify-between ">
@@ -40,20 +43,14 @@ const BlogArticle = ({ article }: Props) => {
                     <p className="text-lg text-gray-600  text-lg "> {article.subtitle}</p>
                 </div>
                 <div className="mb-4 flex flex-wrap  gap-10 justify-center" style={{}}>
-                    <img src={article.images[0]} alt={article.title} className=" md:w-5/12 object-cover" />
-                    <img src={article.images[0]} alt={article.title} className=" md:w-5/12 object-cover" />
+                    <img src={article.image} alt={article.title} className=" md:w-5/12 object-cover" />
                 </div>
 
-                <p className="md:w-5/12 text-gray-600 py-4 text-lg ">
 
-                    {article.article}
-                </p>
-                <div className="mb-4 flex flex-wrap  gap-10 justify-center " style={{}}>
-                    <img src={article.images[0]} alt={article.title} className="md:w-5/12 object-cover" />
+                <div className="mb-4 flex flex-wrap  gap-10 justify-center text-gray-600 " style={{}}>
+                    {article.content}
                 </div>
-                <p className="md:w-5/12 text-gray-600 text-lg">
-                    {article.article}
-                </p>
+
 
             </Container>
 
