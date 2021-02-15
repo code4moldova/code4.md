@@ -14,7 +14,6 @@ type Props = React.PropsWithChildren<{
 
 const BlogArticle = ({ article }: Props) => {
 
-    const articleParts = article.content.text;
 
     return (
         <>
