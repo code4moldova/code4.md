@@ -7,6 +7,7 @@ import politica from '../images/sponsors/politica.png'
 import stisc from '../images/sponsors/stisc.png'
 import diez from '../images/sponsors/diez.png'
 import digitalpark from '../images/sponsors/digitalpark.png'
+import zugo from '../images/sponsors/zugo.png'
 
 export function Sponsors() {
   return (
@@ -28,6 +29,9 @@ export function Sponsors() {
           </Column>
           <Column className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
             <img className="w-full" src={digitalpark} alt="" />
+          </Column>
+          <Column className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
+            <img className="w-full" src={zugo} alt="" />
           </Column>
         </Row>
       </Container>
