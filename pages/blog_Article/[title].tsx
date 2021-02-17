@@ -47,7 +47,12 @@ const BlogArticle = ({ article }: Props) => {
 
 
                 <div className="mb-4 flex flex-wrap  gap-10 justify-center text-gray-600 " style={{}}>
-                    {article.content}
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html: article.content
+                        }}
+                    ></div>
+
                 </div>
 
 
