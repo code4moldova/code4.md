@@ -77,7 +77,7 @@ export default function Home() {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="https://forms.gle/rMH5XpsSjhaY8Lr97"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdwxXMZt9xJCCFuT2sLgXb3Yh8npWgQweNU2fEcOvRk8xmwRQ/viewform?usp=sf_link"
                   className="mt-auto py-4 px-12 w-full bg-blue-500 hover:bg-blue-700 text-white text-center">
                   Devino voluntar
                 </a>
