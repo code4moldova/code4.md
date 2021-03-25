@@ -83,7 +83,7 @@ export default function Donate() {
                   <div className="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
                     <dt className="text-sm leading-5 font-medium text-gray-500">IBAN (cont curent):</dt>
                     <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-                      MD56ML000000002251967325
+                      MD12VI022241700000931MDL
                     </dd>
                   </div>
                   <div className="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
@@ -93,12 +93,12 @@ export default function Donate() {
                   <div className="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
                     <dt className="text-sm leading-5 font-medium text-gray-500">Denumirea Bancii:</dt>
                     <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-                      BC “Moldindconbank” SA suc. “Vasile Alecsandri”
+                      BC “VICTORIABANK” SA suc. 17, Chișinău
                     </dd>
                   </div>
                   <div className="py-1 sm:grid sm:grid-cols-3 sm:gap-4">
                     <dt className="text-sm leading-5 font-medium text-gray-500">Codul bancar:</dt>
-                    <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">MOLDMD2X367</dd>
+                    <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">VICBMD2X</dd>
                   </div>
                 </dl>
               </div>
@@ -106,13 +106,20 @@ export default function Donate() {
             <Column className="w-full xl:w-1/2 mb-8">
               <div className="bg-white p-12 border-t-8 border-blue-500 h-full">
                 <h2 className="text-2xl font-bold text-blue-500 mb-8">Fundraising</h2>
-                <dl>                  
+                <dl>
                   <div className="mb-8 grid grid-cols-3 gap-4">
-                     <dt>
-                      <img width="500" height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/1200px-PayPal_logo.svg.png" alt="paypal" />
+                    <dt>
+                      <img
+                        width="500"
+                        height="200"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/1200px-PayPal_logo.svg.png"
+                        alt="paypal"
+                      />
                     </dt>
                     <dd className="col-span-2">
-                      <a href="https://paypal.me/code4md?locale.x=en_US" className="underline text-blue-500 mb-4 inline-block">
+                      <a
+                        href="https://paypal.me/code4md?locale.x=en_US"
+                        className="underline text-blue-500 mb-4 inline-block">
                         Donează prin PayPal
                       </a>
                       <p>Sustine Code4Moldova pentru a schimba Moldova spre bine.</p>
