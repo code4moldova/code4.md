@@ -7,6 +7,8 @@ import donateImage from '../images/donate-hero.svg'
 import { Heading } from '../components/heading'
 import { Row } from '../components/row'
 import { Column } from '../components/column'
+import patreonIcon from '../images/patreon-icon.png'
+import paypalIcon from '../images/paypal-icon.png'
 
 export default function Donate() {
   return (
@@ -151,35 +153,38 @@ export default function Donate() {
             </Column>
             <Column className="w-full xl:w-1/2 mb-8">
               <div className="bg-white p-12 border-t-8 border-blue-500 h-full">
-                <h2 className="text-2xl font-bold text-blue-500 mb-8">Fundraising</h2>
+                <h2 className="text-2xl font-bold text-blue-500 mb-8">Donează prin alte metode</h2>
                 <dl>
-                  <div className="mb-8 grid grid-cols-3 gap-4">
-                    <dt>
-                      <img
-                        width="500"
-                        height="200"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/1200px-PayPal_logo.svg.png"
-                        alt="paypal"
-                      />
-                    </dt>
-                    <dd className="col-span-2">
-                      <a
-                        href="https://paypal.me/code4md?locale.x=en_US"
-                        className="underline text-blue-500 mb-4 inline-block">
-                        Donează prin PayPal
+                  <div className="mb-8 flex">
+                    <dt className="flex-shrink-0">
+                      <a href="https://www.patreon.com/codeformoldova" target="_blank" rel="noreferrer nofollow">
+                        <img src={patreonIcon} alt="paypal" />
                       </a>
-                      <p>Sustine Code4Moldova pentru a schimba Moldova spre bine.</p>
+                    </dt>
+                    <dd className="flex-grow ml-2 md:ml-8">
+                      <a
+                        href="https://www.patreon.com/codeformoldova"
+                        target="_blank"
+                        rel="noreferrer nofollow"
+                        className="block flex h-full items-center justify-center w-full bg-red-400 text-white text-center">
+                        <strong>Devino suporter pe Patreon</strong>
+                      </a>
                     </dd>
                   </div>
-                  <div className="mb-8 grid grid-cols-3 gap-4">
-                    <dt>
-                      <img src="https://picsum.photos/500/200" alt="paypal" />
-                    </dt>
-                    <dd className="col-span-2">
-                      <a href="#" className="underline text-blue-500 mb-4 inline-block">
-                        Donează prin X
+                  <div className="mb-8 flex">
+                    <dt className="flex-shrink-0">
+                      <a href="https://paypal.me/code4md?locale.x=en_US" target="_blank" rel="noreferrer nofollow">
+                        <img src={paypalIcon} alt="paypal" />
                       </a>
-                      <p>Adipiscing elit egestas in tellus adipiscing orci morbi amet tortor.</p>
+                    </dt>
+                    <dd className="flex-grow ml-2 md:ml-8">
+                      <a
+                        href="https://paypal.me/code4md?locale.x=en_US"
+                        target="_blank"
+                        rel="noreferrer nofollow"
+                        className="block flex h-full items-center justify-center w-full bg-blue-400 text-white text-center">
+                        <strong>Donează prin PayPal</strong>
+                      </a>
                     </dd>
                   </div>
                 </dl>
