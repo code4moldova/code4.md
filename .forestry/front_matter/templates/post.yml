@@ -1,0 +1,46 @@
+---
+label: Post
+hide_body: false
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html
+  label: Description
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
+- name: image
+  type: file
+  config:
+    maxSize: 5
+  label: Image
+- name: created_date
+  type: datetime
+  label: Created Date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: true
+  default: now
+pages:
+- data/posts/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit.excepturi-in-0.md
+- data/posts/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit.excepturi-in-1.md
+- data/posts/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit.excepturi-in-2.md
+- data/posts/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit.excepturi-in-3.md
+- data/posts/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit.excepturi-in-4.md
+- data/posts/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit.excepturi-in-5.md

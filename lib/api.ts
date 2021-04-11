@@ -1,42 +1,65 @@
 import fs from 'fs'
 import { join } from 'path'
 import grayMatter from 'gray-matter'
+import markdownToHtml from './markdown-to-html'
 
-function getSlugs(directory: string) {
+function getSlugs(directory: string, extension = 'json') {
   const slugsDirectory = join(process.cwd(), directory)
   const slugs = fs.readdirSync(slugsDirectory)
-  return slugs.map(slug => slug.replace(/\.json$/, ''))
+  return slugs.map(slug => slug.replace(new RegExp(`\\.${extension}`), ''))
 }
 
-function getDirectory(directory: string) {
+const jsonFormatSort = (a: any, b: any) => new Date(a.created_date).getTime() - new Date(b.created_date).getTime()
+const mdFormatSort = (a: any, b: any) =>
+  new Date(a.data.created_date).getTime() - new Date(b.data.created_date).getTime()
+const jsonDataFormat = (ctx: ReturnType<typeof getDirectory>[number]) => ({
+  ...JSON.parse(ctx.content),
+  slug: ctx.slug,
+})
+const mdDataFormat = (ctx: ReturnType<typeof getDirectory>[number]): ReturnType<typeof getDirectory>[number] => ({
+  ...ctx,
+  data: {
+    ...ctx.data,
+    created_date: ctx.data.created_date.toISOString(),
+  },
+  content: markdownToHtml(ctx.content),
+})
+
+function getDirectory(directory: string, extension = 'json') {
   const fullDirectory = join(process.cwd(), directory)
-  return getSlugs(directory)
-    .map(slug => {
-      const fullPath = join(fullDirectory, `${slug}.json`)
-      const fileContents = fs.readFileSync(fullPath, 'utf8')
-      const { content } = grayMatter(fileContents)
-      return { ...JSON.parse(content), slug }
-    })
-    .sort((a: any, b: any) => new Date(a.created_date).getTime() - new Date(b.created_date).getTime())
+  return getSlugs(directory, extension).map(slug => {
+    const fullPath = join(fullDirectory, `${slug}.${extension}`)
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
+    const { content, data } = grayMatter(fileContents)
+    return { slug, data, content }
+  })
 }
 
 export function getStaff() {
-  return getDirectory('data/staff')
+  return getDirectory('data/staff').map(jsonDataFormat).sort(jsonFormatSort)
 }
 
 // TODO: Maybe generate community from all who contributed in GitHub?
 export function getCommunity() {
-  return getDirectory('data/community')
+  return getDirectory('data/community').map(jsonDataFormat).sort(jsonFormatSort)
 }
 
 export function getSponsors() {
-  return getDirectory('data/sponsors')
+  return getDirectory('data/sponsors').map(jsonDataFormat).sort(jsonFormatSort)
 }
 
 export function getApplications() {
-  return getDirectory('data/applications')
+  return getDirectory('data/applications').map(jsonDataFormat).sort(jsonFormatSort)
 }
 
 export function getApplicationsSlugs() {
   return getSlugs('data/applications')
+}
+
+export function getPosts() {
+  return getDirectory('data/posts', 'md').map(mdDataFormat).sort(mdFormatSort)
+}
+
+export function getPostsSlugs() {
+  return getSlugs('data/posts', 'md')
 }

@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
 - type: directory
@@ -37,10 +37,13 @@ sections:
   templates:
   - person
 - type: directory
-  path: posts
+  path: data/posts
   label: Posts
   create: documents
-  match: "**/*"
+  match: "*.md"
+  new_doc_ext: md
+  templates:
+  - post
 upload_dir: public/uploads
 public_path: "/uploads"
 front_matter_path: ''

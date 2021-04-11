@@ -1,0 +1,15 @@
+.root :global(p),
+.root :global(img),
+.root :global(h1),
+.root :global(h2),
+.root :global(h3),
+.root :global(h4),
+.root :global(h5),
+.root :global(h6) {
+  margin-bottom: 15px;
+}
+
+.root :global(hr) {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
