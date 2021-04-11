@@ -1,0 +1,97 @@
+---
+label: Application
+hide_body: true
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: long_title
+  type: text
+  config:
+    required: true
+  label: Long Title
+- name: website
+  type: text
+  config:
+    required: true
+  label: Website
+- name: github_repository
+  type: text
+  config:
+    required: true
+  label: GitHub Repository
+- name: description
+  type: text
+  config:
+    required: true
+  label: Description
+- name: long_description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Long Description
+- name: image
+  type: file
+  config:
+    maxSize: 5
+  label: Image
+- name: icon
+  type: file
+  config:
+    maxSize: 5
+  label: Icon
+- name: status
+  type: text
+  config:
+    required: false
+  label: Status
+- name: main_theme
+  type: text
+  config:
+    required: false
+  label: Main Theme
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: launch_date
+  type: datetime
+  label: Launch Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: scope
+  type: text
+  config:
+    required: true
+  label: Scope
+- name: report_url
+  type: text
+  config:
+    required: false
+  label: Report URL
+- name: created_date
+  type: datetime
+  label: created_date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: true
+  default: now
+pages:
+- data/applications/ajut-md.json
+- data/applications/info-c19-md.json
+- data/applications/voluntar-md.json

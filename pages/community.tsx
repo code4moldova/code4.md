@@ -6,7 +6,7 @@ import { Volunteers } from '../blocks/volunteers'
 import { Staff } from '../blocks/staff'
 import { BeWithUs } from '../blocks/be-with-us'
 import { GetStaticProps } from 'next'
-import { getAllCommunity, getAllStaff } from '../lib/api'
+import { getCommunity, getStaff } from '../lib/api'
 
 export default function Community({ staff, community }: any) {
   return (
@@ -25,7 +25,7 @@ export default function Community({ staff, community }: any) {
 
 export const getStaticProps: GetStaticProps = async () => ({
   props: {
-    staff: getAllStaff(),
-    community: getAllCommunity(),
+    staff: getStaff(),
+    community: getCommunity(),
   },
 })

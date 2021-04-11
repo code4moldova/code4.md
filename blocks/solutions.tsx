@@ -5,9 +5,9 @@ import { Column } from '../components/column'
 import { Container } from '../components/container'
 import { Heading } from '../components/heading'
 import { Row } from '../components/row'
-import { solutionsData } from '../data/solutions-data'
+import { Solution as SolutionType } from '../types/solution'
 
-export function Solutions() {
+export function Solutions({ solutions }: { solutions: SolutionType[] }) {
   return (
     <section className="bg-gray-100 py-5 md:py-16">
       <Container>
@@ -23,7 +23,7 @@ export function Solutions() {
         </div>
 
         <Row>
-          {solutionsData.map(solution => (
+          {solutions.map(solution => (
             <Column key={solution.title} className="mb-4 w-full md:w-1/3">
               <div className="bg-white h-full">
                 <div className="relative" style={{ paddingBottom: '75%' }}>

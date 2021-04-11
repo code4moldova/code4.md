@@ -2,29 +2,41 @@ import fs from 'fs'
 import { join } from 'path'
 import grayMatter from 'gray-matter'
 
+function getSlugs(directory: string) {
+  const slugsDirectory = join(process.cwd(), directory)
+  const slugs = fs.readdirSync(slugsDirectory)
+  return slugs.map(slug => slug.replace(/\.json$/, ''))
+}
+
 function getDirectory(directory: string) {
-  const staffDirectory = join(process.cwd(), directory)
-  const slugs = fs.readdirSync(staffDirectory)
-  return slugs
+  const fullDirectory = join(process.cwd(), directory)
+  return getSlugs(directory)
     .map(slug => {
-      const realSlug = slug.replace(/\.json$/, '')
-      const fullPath = join(staffDirectory, `${realSlug}.json`)
+      const fullPath = join(fullDirectory, `${slug}.json`)
       const fileContents = fs.readFileSync(fullPath, 'utf8')
       const { content } = grayMatter(fileContents)
-      return JSON.parse(content)
+      return { ...JSON.parse(content), slug }
     })
     .sort((a: any, b: any) => new Date(a.created_date).getTime() - new Date(b.created_date).getTime())
 }
 
-export function getAllStaff() {
+export function getStaff() {
   return getDirectory('data/staff')
 }
 
 // TODO: Maybe generate community from all who contributed in GitHub?
-export function getAllCommunity() {
+export function getCommunity() {
   return getDirectory('data/community')
 }
 
-export function getAllSponsors() {
+export function getSponsors() {
   return getDirectory('data/sponsors')
+}
+
+export function getApplications() {
+  return getDirectory('data/applications')
+}
+
+export function getApplicationsSlugs() {
+  return getSlugs('data/applications')
 }

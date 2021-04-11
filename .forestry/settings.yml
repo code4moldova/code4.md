@@ -5,6 +5,14 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: data/applications
+  label: Applications
+  create: documents
+  match: "*.json"
+  new_doc_ext: json
+  templates:
+  - application
+- type: directory
   path: data/sponsors
   label: Sponsors
   create: documents

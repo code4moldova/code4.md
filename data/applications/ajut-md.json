@@ -1,0 +1,17 @@
+{
+  "title": "ajut.md",
+  "long_title": "ajut.md",
+  "website": "http://ajut.md/",
+  "github_repository": "https://github.com/code4moldova/ajut.md",
+  "description": "Platforma care sprijină societatea civilă și implementarea proiectelor civice prin colectarea de materiale, bani și timp.",
+  "long_description": "<p class=\"mb-2\"><strong>Problema:</strong> Lipsa unei platforme care ar face public nevoile organizațiilor civice și la care ar conecta donatorii de bani, bunuri și timp.</p><p class=\"mb-2\"><strong>Soluția:</strong> Platforma online care conectează donatorii la necesitățile organizațiilor din Moldova.</p><ul class=\"list-disc list-inside pl-5\"><li>ONG-ul odată înregistrat pe platformă își poate afișa nevoia materiale/bani/voluntariat;</li><li>Oricare personă poate dona bani, materiale sau timp pentru ONG-ul selectat</li><li>Pentru toate donațiile de bani se vor raporta cheltuielile.</li></ul>",
+  "image": "/uploads/2021/04/11/help-people.jpeg",
+  "icon": "/uploads/2021/04/11/ajut.svg",
+  "status": "",
+  "main_theme": "",
+  "tags": ["social", "voluntariat"],
+  "launch_date": "",
+  "created_date": "2019-06-11T16:32:56Z",
+  "scope": "Să sprijine societatea civilă și implementarea proiectelor sociale prin donații de bunuri, financiare și de timp.",
+  "report": "https://www.scribd.com/embeds/475136713/content?start_page=1&view_mode=scroll&access_key=key-bgUE95Bv6SwQixam7Myg"
+}

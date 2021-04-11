@@ -3,16 +3,16 @@ import React from 'react'
 import { Column } from '../components/column'
 import { Container } from '../components/container'
 import { Row } from '../components/row'
-import { solutionsData } from '../data/solutions-data'
+import { Solution } from '../types/solution'
 
-export function OtherSolutions() {
+export function OtherSolutions({ solutions }: { solutions: Solution[] }) {
   return (
     <section className="bg-gray-200 py-5 md:py-16">
       <Container>
         <div className="mb-5 md:mb-10 text-center">vezi alte proiecte:</div>
 
         <Row>
-          {solutionsData.map(solution => (
+          {solutions.map(solution => (
             <Column key={solution.title} className="mb-4 w-full md:w-1/4">
               <div className="h-full">
                 <div className="relative" style={{ paddingBottom: '100%' }}>

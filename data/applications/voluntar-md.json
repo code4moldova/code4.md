@@ -1,0 +1,17 @@
+{
+  "tags": ["social", "voluntariat"],
+  "created_date": "2019-04-11T16:32:56Z",
+  "title": "voluntar.md",
+  "long_title": "voluntar.md",
+  "website": "https://voluntar.md/",
+  "github_repository": "https://github.com/code4moldova/voluntar-web",
+  "description": "Platforma care conectează persoanele care au nevoie de ajutor cu cele care doresc să ajute.",
+  "long_description": "<p class=\"mb-2\">Odată cu izbucnirea pandemiei, a crescut numărul de persoane aflate în situații vulnerabile. Echipa de voluntari “Inițiativa Împreună Împotriva COVID19” vin în ajutor acestor oameni cu produse alimentare conectându-i cu voluntarii care pot oferi livrare.</p><p class=\"mb-2\"><strong>Problema:</strong> Un număr considerabil de pesoane aflate în situații de criză (nu au acces la produse alimentare, de igienă și acces la îngrijire medicală, etc.) nu beneficiază de suport.</p><p class=\"mb-2\"><strong>Soluția:</strong> Platformă online care conectează persoanele aflate în situații de criză și societatea civilă care ajută cu produse alimentare, de igienă și transport.</p><ul class=\"list-disc list-inside pl-5\"><li>Toate solicitările telefonice a persoanelor vulnerabile sunt înregistrate pe această platformă</li><li>Orice voluntar care este dispus să ajute cu livrarea pachetelor și oferirii de transport poate să se înregistreze pe platformă</li><li>Voluntarul primește acces la platformă și poate prelua solicitări</li><li>Progresul fiecărei sarcini și statutul solicitărilor pot fi ușor gestionate și monitorizate</li></ul>",
+  "image": "/uploads/2021/04/11/girl-pressing-door-buttons.jpeg",
+  "icon": "/uploads/2021/04/11/moldova.svg",
+  "status": "",
+  "main_theme": "covid19",
+  "launch_date": "2020-04-19T21:00:00Z",
+  "scope": "Oferi sprijin Departamentului de Asistență Socială în oferirea suportului de bunuri pentru persoanele nevoiașe.",
+  "report_url": "https://www.scribd.com/embeds/475134849/content?start_page=1&view_mode=scroll&access_key=key-vIda9HDZrb4iIfYrVbow"
+}

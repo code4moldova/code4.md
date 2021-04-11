@@ -30,9 +30,9 @@ fields:
   hidden: true
   default: now
 pages:
-- data/sponsors/stisc.json
 - data/sponsors/diez.json
 - data/sponsors/digital-park.json
 - data/sponsors/initiativa.json
 - data/sponsors/politica.json
+- data/sponsors/stisc.json
 - data/sponsors/zugo.json

@@ -10,11 +10,19 @@ import { OtherSolutions } from '../../blocks/other-solutions'
 import { BackButton } from '../../components/back-button'
 import { Container } from '../../components/container'
 import { Heading } from '../../components/heading'
-import { solutionsData } from '../../data/solutions-data'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { getAllSponsors } from '../../lib/api'
+import { getApplications, getApplicationsSlugs, getSponsors } from '../../lib/api'
+import { Solution as SolutionType } from '../../types/solution'
 
-export default function Solution({ sponsors, solution }: any) {
+export default function Solution({
+  sponsors,
+  solution,
+  solutions,
+}: {
+  sponsors: any[]
+  solution: SolutionType
+  solutions: SolutionType[]
+}) {
   return (
     <React.Fragment>
       <Head>
@@ -33,13 +41,13 @@ export default function Solution({ sponsors, solution }: any) {
           </Heading>
           <div
             dangerouslySetInnerHTML={{
-              __html: solution.longDescription,
+              __html: solution.long_description,
             }}
           />
         </Container>
 
         {/** Raport block */}
-        {solution.report ? <SolutionReport solution={solution} /> : ''}
+        {solution.report ? <SolutionReport report={solution.report} /> : ''}
 
         {/** Partners block */}
         <Container className="bg-gray-100 pb-32 px-12">
@@ -50,23 +58,25 @@ export default function Solution({ sponsors, solution }: any) {
         <BeWithUs sectionClass="-mt-24" />
 
         {/** Other projects block */}
-        <OtherSolutions />
+        <OtherSolutions solutions={solutions} />
       </section>
       <Footer />
     </React.Fragment>
   )
 }
 
-export const getStaticProps: GetStaticProps = async ctx => ({
-  props: {
-    sponsors: getAllSponsors(),
-    solution: solutionsData.find(function (o) {
-      return o.slug === ctx.params?.slug
-    }),
-  },
-})
+export const getStaticProps: GetStaticProps = async ctx => {
+  const solutions = getApplications()
+  return {
+    props: {
+      sponsors: getSponsors(),
+      solutions,
+      solution: solutions.find(o => o.slug === ctx.params?.slug),
+    },
+  }
+}
 
 export const getStaticPaths: GetStaticPaths = async () => ({
-  paths: ['/solutions/voluntar-md', '/solutions/info-c19-md', '/solutions/ajut-md'],
+  paths: getApplicationsSlugs().map(slug => `/solutions/${slug}`),
   fallback: false,
 })

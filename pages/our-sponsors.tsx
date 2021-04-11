@@ -5,7 +5,7 @@ import { Footer } from '../blocks/footer'
 import Head from 'next/head'
 import { BeWithUs } from '../blocks/be-with-us'
 import { GetStaticProps } from 'next'
-import { getAllSponsors } from '../lib/api'
+import { getSponsors } from '../lib/api'
 
 export default function OurSponsors({ sponsors }: any) {
   return (
@@ -23,6 +23,6 @@ export default function OurSponsors({ sponsors }: any) {
 
 export const getStaticProps: GetStaticProps = async ctx => ({
   props: {
-    sponsors: getAllSponsors(),
+    sponsors: getSponsors(),
   },
 })

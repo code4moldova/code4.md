@@ -9,7 +9,7 @@ import { OurActivity } from '../blocks/our-activity'
 import { Staff } from '../blocks/staff'
 import { BeWithUs } from '../blocks/be-with-us'
 import { GetStaticProps } from 'next'
-import { getAllStaff } from '../lib/api'
+import { getStaff } from '../lib/api'
 
 export default function AboutUs({ staff }: any) {
   return (
@@ -37,5 +37,5 @@ export default function AboutUs({ staff }: any) {
 }
 
 export const getStaticProps: GetStaticProps = async () => ({
-  props: { staff: getAllStaff() },
+  props: { staff: getStaff() },
 })

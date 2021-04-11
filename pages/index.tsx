@@ -7,10 +7,9 @@ import { Sponsors } from '../blocks/sponsors'
 import { Footer } from '../blocks/footer'
 import Head from 'next/head'
 import { GetStaticProps } from 'next'
-import { getAllSponsors } from '../lib/api'
-import { solutionsData } from '../data/solutions-data'
+import { getApplications, getSponsors } from '../lib/api'
 
-export default function Home({ sponsors }: any) {
+export default function Home({ sponsors, solutions }: any) {
   return (
     <React.Fragment>
       <Head>
@@ -18,7 +17,7 @@ export default function Home({ sponsors }: any) {
       </Head>
       <Header />
       <Hero />
-      <Solutions />
+      <Solutions solutions={solutions} />
       <GetInvolved />
       <Sponsors sponsors={sponsors} />
       <Footer />
@@ -28,6 +27,7 @@ export default function Home({ sponsors }: any) {
 
 export const getStaticProps: GetStaticProps = async ctx => ({
   props: {
-    sponsors: getAllSponsors(),
+    sponsors: getSponsors(),
+    solutions: getApplications(),
   },
 })

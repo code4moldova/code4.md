@@ -8,9 +8,11 @@ import { Column } from '../components/column'
 import { Container } from '../components/container'
 import { Heading } from '../components/heading'
 import { Row } from '../components/row'
-import { solutionsData } from '../data/solutions-data'
+import { Solution as SolutionType } from '../types/solution'
+import { GetStaticProps } from 'next'
+import { getApplications } from '../lib/api'
 
-export default function Solutions() {
+export default function Solutions({ solutions }: { solutions: SolutionType[] }) {
   return (
     <React.Fragment>
       <Head>
@@ -29,7 +31,7 @@ export default function Solutions() {
         </Container>
         <Container className="xl:mb-8">
           <Row>
-            {solutionsData.map(solution => (
+            {solutions.map(solution => (
               <Column key={solution.title} className="w-full lg:w-1/2 mb-8">
                 <div className="bg-white  h-full flex flex-col">
                   <div className="relative" style={{ paddingBottom: '75%' }}>
@@ -58,3 +60,9 @@ export default function Solutions() {
     </React.Fragment>
   )
 }
+
+export const getStaticProps: GetStaticProps = async () => ({
+  props: {
+    solutions: getApplications(),
+  },
+})
