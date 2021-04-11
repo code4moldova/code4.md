@@ -3,9 +3,9 @@ import { Column } from '../components/column'
 import { Container } from '../components/container'
 import { Heading } from '../components/heading'
 import { Row } from '../components/row'
-import { volunteersData } from '../data/volunteers-data'
+import heroImage from '../images/civic-good.svg'
 
-export function Volunteers() {
+export function Volunteers({ community }: any) {
   return (
     <section className="py-24">
       <Container>
@@ -18,24 +18,26 @@ export function Volunteers() {
         </p>
 
         <Row className="-mb-12">
-          {volunteersData.map(person => (
+          {community.map((person: any) => (
             <Column key={person.name} className="w-1/2 sm:w-1/3 md:w-1/4 mb-12">
               <div className="mb-4 relative" style={{ paddingBottom: '50%' }}>
-                <img src={person.image} alt={person.name} className="absolute h-full w-1/2 object-cover" />
+                <img src={person.image || heroImage} alt={person.name} className="absolute h-full w-1/2 object-cover" />
               </div>
               <Heading tag="h3" className="text-lg font-bold mb-1">
                 {person.name}
               </Heading>
               <p className="text-sm mb-2">{person.role}</p>
               <div className="flex">
-                <a href={person.linkedin}>
-                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.92316 0.544189C1.76788 0.544189 0.00390625 2.30812 0.00390625 4.46344V16.6256C0.00390625 18.7809 1.76784 20.5442 3.92316 20.5442H16.0853C18.2406 20.5442 20.0039 18.7809 20.0039 16.6256V4.46344C20.0039 2.30816 18.2406 0.544189 16.0853 0.544189H3.92316ZM4.90891 3.84459C5.94232 3.84459 6.57886 4.52301 6.59851 5.41478C6.59851 6.28686 5.94228 6.98434 4.88892 6.98434H4.86953C3.85579 6.98434 3.20056 6.2869 3.20056 5.41478C3.20056 4.52303 3.87562 3.84459 4.90889 3.84459H4.90891ZM13.8144 8.01261C15.8019 8.01261 17.2917 9.31162 17.2917 12.1031V17.3144H14.2713V12.4525C14.2713 11.2308 13.8342 10.3973 12.7412 10.3973C11.9067 10.3973 11.4093 10.9591 11.191 11.5018C11.1112 11.6959 11.0916 11.9671 11.0916 12.2387V17.3144H8.07119C8.07119 17.3144 8.11083 9.07852 8.07119 8.22575H11.0922V9.51279C11.4936 8.89352 12.2115 8.01259 13.8144 8.01259V8.01261ZM3.37872 8.22641H6.3991V17.3144H3.37872V8.22641Z"
-                      fill="#024BBB"
-                    />
-                  </svg>
-                </a>
+                {person.linkedin_url && (
+                  <a href={person.linkedin_url}>
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.92316 0.544189C1.76788 0.544189 0.00390625 2.30812 0.00390625 4.46344V16.6256C0.00390625 18.7809 1.76784 20.5442 3.92316 20.5442H16.0853C18.2406 20.5442 20.0039 18.7809 20.0039 16.6256V4.46344C20.0039 2.30816 18.2406 0.544189 16.0853 0.544189H3.92316ZM4.90891 3.84459C5.94232 3.84459 6.57886 4.52301 6.59851 5.41478C6.59851 6.28686 5.94228 6.98434 4.88892 6.98434H4.86953C3.85579 6.98434 3.20056 6.2869 3.20056 5.41478C3.20056 4.52303 3.87562 3.84459 4.90889 3.84459H4.90891ZM13.8144 8.01261C15.8019 8.01261 17.2917 9.31162 17.2917 12.1031V17.3144H14.2713V12.4525C14.2713 11.2308 13.8342 10.3973 12.7412 10.3973C11.9067 10.3973 11.4093 10.9591 11.191 11.5018C11.1112 11.6959 11.0916 11.9671 11.0916 12.2387V17.3144H8.07119C8.07119 17.3144 8.11083 9.07852 8.07119 8.22575H11.0922V9.51279C11.4936 8.89352 12.2115 8.01259 13.8144 8.01259V8.01261ZM3.37872 8.22641H6.3991V17.3144H3.37872V8.22641Z"
+                        fill="#024BBB"
+                      />
+                    </svg>
+                  </a>
+                )}
                 {person.website && (
                   <a href={person.website} className="ml-2">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

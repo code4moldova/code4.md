@@ -41,6 +41,12 @@ fields:
   default: now
   hidden: true
 pages:
+- data/community/alexandru-ciornii.json
+- data/community/eugeniu-cempoi.json
+- data/community/evghenii-borozan.json
+- data/community/nicu-lucas.json
+- data/community/valerii-fazli.json
+- data/community/vasile-catana.json
 - data/staff/alex-h.json
 - data/staff/andrei-luca.json
 - data/staff/andrei-valcov.json

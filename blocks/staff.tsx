@@ -3,6 +3,7 @@ import { Column } from '../components/column'
 import { Container } from '../components/container'
 import { Heading } from '../components/heading'
 import { Row } from '../components/row'
+import heroImage from '../images/civic-good.svg'
 
 export function Staff({ staff }: any) {
   return (
@@ -20,7 +21,7 @@ export function Staff({ staff }: any) {
           {staff.map((person: any) => (
             <Column key={person.name} className="w-1/2 sm:w-1/3 md:w-1/4 mb-12">
               <div className="mb-4 relative" style={{ paddingBottom: '50%' }}>
-                <img src={person.image} alt={person.name} className="absolute h-full w-1/2 object-cover" />
+                <img src={person.image || heroImage} alt={person.name} className="absolute h-full w-1/2 object-cover" />
               </div>
               <Heading tag="h3" className="text-lg font-bold mb-1">
                 {person.name}

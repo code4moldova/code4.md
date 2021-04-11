@@ -2,14 +2,13 @@ import React from 'react'
 import { Header } from '../blocks/header'
 import { Footer } from '../blocks/footer'
 import Head from 'next/head'
-import { Heading } from '../components/heading'
 import { Volunteers } from '../blocks/volunteers'
 import { Staff } from '../blocks/staff'
 import { BeWithUs } from '../blocks/be-with-us'
 import { GetStaticProps } from 'next'
-import { getAllStaff } from '../lib/api'
+import { getAllCommunity, getAllStaff } from '../lib/api'
 
-export default function Community({ staff }: any) {
+export default function Community({ staff, community }: any) {
   return (
     <React.Fragment>
       <Head>
@@ -17,7 +16,7 @@ export default function Community({ staff }: any) {
       </Head>
       <Header />
       <Staff staff={staff} />
-      <Volunteers />
+      <Volunteers community={community} />
       <BeWithUs />
       <Footer />
     </React.Fragment>
@@ -25,5 +24,8 @@ export default function Community({ staff }: any) {
 }
 
 export const getStaticProps: GetStaticProps = async () => ({
-  props: { staff: getAllStaff() },
+  props: {
+    staff: getAllStaff(),
+    community: getAllCommunity(),
+  },
 })
