@@ -20,7 +20,7 @@ export interface Solution {
   tags: string[]
   launchDate: string | null
   scope: string
-  report: string | undefined
+  report: string | null
 }
 
 export const solutionsData: Solution[] = [
@@ -78,7 +78,7 @@ export const solutionsData: Solution[] = [
     launchDate: '17.03.2020',
     scope:
       'Oferi suport informațional populației din surse sigure; combaterea dezinformării la situația legată de COVID-19 în Moldova.',
-    report: undefined,
+    report: null,
   },
   {
     slug: 'ajut-md',

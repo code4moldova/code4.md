@@ -24,3 +24,7 @@ export function getAllStaff() {
 export function getAllCommunity() {
   return getDirectory('data/community')
 }
+
+export function getAllSponsors() {
+  return getDirectory('data/sponsors')
+}

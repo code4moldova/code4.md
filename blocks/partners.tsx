@@ -3,9 +3,8 @@ import { Container } from '../components/container'
 import { Row } from '../components/row'
 import { Column } from '../components/column'
 import { Heading } from '../components/heading'
-import { partnersData } from '../data/partners-data'
 
-export function Partners() {
+export function Partners({ sponsors }: any) {
   return (
     <section>
       <Container>
@@ -16,10 +15,10 @@ export function Partners() {
         </Row>
 
         <Row>
-          {partnersData.map(partner => (
-            <Column key={partner.name} className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
-              <a href={partner.website} title={partner.name} target="_blank">
-                <img className="w-full" src={partner.image} alt={partner.name} />
+          {sponsors.map((sponsor: any) => (
+            <Column key={sponsor.name} className="mb-4 w-full md:w-1/4 mx-10 md:mx-0">
+              <a href={sponsor.website} title={sponsor.name} target="_blank">
+                <img className="w-full" src={sponsor.image} alt={sponsor.name} />
               </a>
             </Column>
           ))}

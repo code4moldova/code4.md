@@ -1,0 +1,38 @@
+---
+label: Sponsor
+hide_body: true
+display_field: name
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+- name: website
+  type: text
+  config:
+    required: false
+  label: Website
+- name: image
+  type: file
+  config:
+    maxSize: 5
+  label: Image
+- name: created_date
+  type: datetime
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: Created Date
+  hidden: true
+  default: now
+pages:
+- data/sponsors/stisc.json
+- data/sponsors/diez.json
+- data/sponsors/digital-park.json
+- data/sponsors/initiativa.json
+- data/sponsors/politica.json
+- data/sponsors/zugo.json

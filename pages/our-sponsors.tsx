@@ -4,17 +4,25 @@ import { Sponsors } from '../blocks/sponsors'
 import { Footer } from '../blocks/footer'
 import Head from 'next/head'
 import { BeWithUs } from '../blocks/be-with-us'
+import { GetStaticProps } from 'next'
+import { getAllSponsors } from '../lib/api'
 
-export default function OurSponsors() {
+export default function OurSponsors({ sponsors }: any) {
   return (
     <React.Fragment>
       <Head>
         <title>Sponsori / Code 4 Moldova Sponsors</title>
       </Head>
       <Header />
-      <Sponsors />
+      <Sponsors sponsors={sponsors} />
       <BeWithUs />
       <Footer />
     </React.Fragment>
   )
 }
+
+export const getStaticProps: GetStaticProps = async ctx => ({
+  props: {
+    sponsors: getAllSponsors(),
+  },
+})

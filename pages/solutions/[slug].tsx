@@ -10,18 +10,11 @@ import { OtherSolutions } from '../../blocks/other-solutions'
 import { BackButton } from '../../components/back-button'
 import { Container } from '../../components/container'
 import { Heading } from '../../components/heading'
-import { useRouter } from 'next/router'
 import { solutionsData } from '../../data/solutions-data'
+import { GetStaticPaths, GetStaticProps } from 'next'
+import { getAllSponsors } from '../../lib/api'
 
-export default function Solution() {
-  const router = useRouter()
-  const { slug } = router.query
-
-  const solution =
-    solutionsData.filter(function (o) {
-      return o.slug === slug
-    })[0] || solutionsData[2]
-
+export default function Solution({ sponsors, solution }: any) {
   return (
     <React.Fragment>
       <Head>
@@ -50,7 +43,7 @@ export default function Solution() {
 
         {/** Partners block */}
         <Container className="bg-gray-100 pb-32 px-12">
-          <Partners />
+          <Partners sponsors={sponsors} />
         </Container>
 
         {/** BeWithUs block */}
@@ -63,3 +56,17 @@ export default function Solution() {
     </React.Fragment>
   )
 }
+
+export const getStaticProps: GetStaticProps = async ctx => ({
+  props: {
+    sponsors: getAllSponsors(),
+    solution: solutionsData.find(function (o) {
+      return o.slug === ctx.params?.slug
+    }),
+  },
+})
+
+export const getStaticPaths: GetStaticPaths = async () => ({
+  paths: ['/solutions/voluntar-md', '/solutions/info-c19-md', '/solutions/ajut-md'],
+  fallback: false,
+})
