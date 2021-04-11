@@ -8,8 +8,10 @@ import { Heading } from '../components/heading'
 import { OurActivity } from '../blocks/our-activity'
 import { Staff } from '../blocks/staff'
 import { BeWithUs } from '../blocks/be-with-us'
+import { GetStaticProps } from 'next'
+import { getAllStaff } from '../lib/api'
 
-export default function AboutUs() {
+export default function AboutUs({ staff }: any) {
   return (
     <React.Fragment>
       <Head>
@@ -27,9 +29,13 @@ export default function AboutUs() {
       </section>
       <OurValues />
       <OurActivity />
-      <Staff />
+      <Staff staff={staff} />
       <BeWithUs />
       <Footer />
     </React.Fragment>
   )
 }
+
+export const getStaticProps: GetStaticProps = async () => ({
+  props: { staff: getAllStaff() },
+})

@@ -1,0 +1,50 @@
+---
+label: Person
+hide_body: true
+display_field: name
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  hidden: false
+- name: role
+  type: text
+  config:
+    required: true
+  label: Role
+- name: linkedin_url
+  type: text
+  config:
+    required: false
+  label: Linkedin URL
+- name: website
+  type: text
+  config:
+    required: false
+  label: Website
+- name: image
+  type: file
+  config:
+    maxSize: 5
+  label: Image
+- name: created_date
+  type: datetime
+  label: Created Date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+  hidden: true
+pages:
+- data/staff/alex-h.json
+- data/staff/andrei-luca.json
+- data/staff/andrei-valcov.json
+- data/staff/ion-mosnoi.json
+- data/staff/irina-buzu.json
+- data/staff/mihaela-taranu.json
+- data/staff/tudor-arnaut.json
