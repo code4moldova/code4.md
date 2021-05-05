@@ -12,11 +12,11 @@ function getSlugs(directory: string, extension = 'json') {
 const jsonFormatSort = (a: any, b: any) => new Date(a.created_date).getTime() - new Date(b.created_date).getTime()
 const mdFormatSort = (a: any, b: any) =>
   new Date(a.data.created_date).getTime() - new Date(b.data.created_date).getTime()
-const jsonDataFormat = (ctx: ReturnType<typeof getDirectory>[number]) => ({
+const jsonDataFormat = (ctx: GetDirectoryReturn) => ({
   ...JSON.parse(ctx.content),
   slug: ctx.slug,
 })
-const mdDataFormat = (ctx: ReturnType<typeof getDirectory>[number]): ReturnType<typeof getDirectory>[number] => ({
+const mdDataFormat = (ctx: GetDirectoryReturn): GetDirectoryReturn => ({
   ...ctx,
   data: {
     ...ctx.data,
@@ -24,6 +24,8 @@ const mdDataFormat = (ctx: ReturnType<typeof getDirectory>[number]): ReturnType<
   },
   content: markdownToHtml(ctx.content),
 })
+
+type GetDirectoryReturn = ReturnType<typeof getDirectory>[number]
 
 function getDirectory(directory: string, extension = 'json') {
   const fullDirectory = join(process.cwd(), directory)

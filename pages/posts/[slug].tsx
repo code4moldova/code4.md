@@ -9,6 +9,7 @@ import { Row } from '../../components/row'
 import { Column } from '../../components/column'
 import { Heading } from '../../components/heading'
 import { Footer } from '../../blocks/footer'
+import htmlToReact from '../../lib/html-to-react'
 
 export default function PostPage({ post }: { post: Post }) {
   return (
@@ -41,7 +42,7 @@ export default function PostPage({ post }: { post: Post }) {
 
             {post.data.image && <img src={post.data.image} alt="Post image" className="mb-16 w-full" />}
 
-            <div className="prose mx-auto" dangerouslySetInnerHTML={{ __html: post.content }} />
+            <div className="prose prose-blue mx-auto">{htmlToReact(post.content)}</div>
           </Column>
         </Row>
       </Container>
