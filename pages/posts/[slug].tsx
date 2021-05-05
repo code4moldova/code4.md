@@ -9,7 +9,6 @@ import { Row } from '../../components/row'
 import { Column } from '../../components/column'
 import { Heading } from '../../components/heading'
 import { Footer } from '../../blocks/footer'
-import { PostContent } from '../../components/post-content/post-content.component'
 
 export default function PostPage({ post }: { post: Post }) {
   return (
@@ -42,7 +41,7 @@ export default function PostPage({ post }: { post: Post }) {
 
             {post.data.image && <img src={post.data.image} alt="Post image" className="mb-16 w-full" />}
 
-            <PostContent content={post.content} />
+            <div className="prose mx-auto" dangerouslySetInnerHTML={{ __html: post.content }} />
           </Column>
         </Row>
       </Container>
