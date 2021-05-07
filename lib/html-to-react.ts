@@ -1,16 +1,21 @@
 import { createElement, ReactNode } from 'react'
 import unified from 'unified'
 import rehype2react from 'rehype-react'
-import parseClient from 'rehype-dom-parse'
-import parseServer from 'rehype-parse'
+import rehypeParseClient from 'rehype-dom-parse'
+import rehypeParseServer from 'rehype-parse'
+import { PdfViewerLazy } from '../components/pdf-viewer/pdf-viewer.lazy'
+const rehypeParse = typeof window === 'undefined' ? rehypeParseServer : rehypeParseClient
 
-const parse = typeof window === 'undefined' ? parseServer : parseClient
+const components = {
+  pdf: PdfViewerLazy,
+}
 
 const processor = unified()
   // HTML to hast
-  .use(parse, { fragment: true })
+  .use(rehypeParse, { fragment: true })
   // hast to JSX
-  .use(rehype2react, { createElement })
+  // @ts-ignore
+  .use(rehype2react, { createElement, components })
 
 export default function htmlToReact(html: string): ReactNode {
   return processor.processSync(html).result as ReactNode

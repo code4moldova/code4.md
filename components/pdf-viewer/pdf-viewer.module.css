@@ -1,0 +1,8 @@
+.documentRoot :global(.react-pdf__Page__canvas) {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.documentRoot :global(.react-pdf__Page__textContent) {
+  display: none;
+}

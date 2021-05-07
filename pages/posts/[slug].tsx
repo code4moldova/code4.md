@@ -42,7 +42,7 @@ export default function PostPage({ post }: { post: Post }) {
 
             {post.data.image && <img src={post.data.image} alt="Post image" className="mb-16 w-full" />}
 
-            <div className="prose prose-blue mx-auto">{htmlToReact(post.content)}</div>
+            <div className="prose prose-blue max-w-full">{htmlToReact(post.content)}</div>
           </Column>
         </Row>
       </Container>

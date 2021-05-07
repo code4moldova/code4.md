@@ -17,6 +17,8 @@ _Lorem ipsum dolor sit amet_, consectetur adipisicing elit. Beatae illum in magn
 
 # Lorem ipsum dolor
 
+::pdf[/uploads/2021/04/29/C4MD_Raport Cercetare_Ghidare in Cariera_2021.pdf]
+
 <span class="text-red-500">Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Beatae illum in magnam magni minima nisi velit? Aspernatur dicta eos fugit nisi placeat provident, qui quod sint tempora, tempore temporibus voluptates?
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae illum in magnam magni minima nisi velit? Aspernatur dicta eos fugit nisi placeat provident, qui quod sint tempora, tempore temporibus voluptates?
