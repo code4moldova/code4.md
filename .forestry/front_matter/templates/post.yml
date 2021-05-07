@@ -38,7 +38,7 @@ fields:
   hidden: true
   default: now
 pages:
-- data/posts/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit.excepturi-in-0.md
+- data/posts/ghidarea-in-cariera.md
 - data/posts/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit.excepturi-in-1.md
 - data/posts/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit.excepturi-in-2.md
 - data/posts/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit.excepturi-in-3.md
