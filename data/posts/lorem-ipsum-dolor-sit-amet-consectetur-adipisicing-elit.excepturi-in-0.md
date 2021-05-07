@@ -50,7 +50,7 @@ Dacă v-a plăcut una dintre soluțiile proiectate și vreți să participați l
 
 Pentru a afla mai multe detalii despre cercetare, urmăriți raportul mai jos:
 
-::pdf\[/uploads/2021/04/29/C4MD_Raport Cercetare_Ghidare in Cariera_2021.pdf\]
+::pdf[/uploads/2021/04/29/C4MD_Raport Cercetare_Ghidare in Cariera_2021.pdf]
 
 Dorim să menționăm că, Black Sea Trust for Regional Cooperation, prin suportul oferit, a dat viață acestui proiect.
 
