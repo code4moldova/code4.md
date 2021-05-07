@@ -7,16 +7,16 @@ categories:
 - report
 created_date: 2021-04-11T18:23:43.000+00:00
 title: 'Ghidarea în Carieră  '
-description: ':::p{.text-right}<br>În perioada ianuarie - martie 2021 <strong>Code
-  For Moldova</strong> a realizat o cercetare care și-a propus să descopere cum tinerii
-  își fac alegerea în carieră și care sunt problemele cu, care se confruntă în acest
-  proces. Procesul de cercetare s-a derulat sub umbrela programului Civic Labs pe
-  subiectul Ghidării în Carieră în Republica Moldova și a cuprins discuții cu diferiți
-  actori precum: elevi, studenți, tineri, profesori universitari, experți în domeniu,
-  Centre de Ghidare în Carieră, asociații obștești, instituții de stat, sectorul asociativ
-  cât și cel privat. În procesul de cercetare au fost implicate liceele: Liceul de
-  Creativitate și Inventică “Prometeu-Prim”, Liceul "Spiru Haret", Лицей имени Н.
-  В. Гоголя, Academia de Studii Economice din Moldova și asociația MentorMe.'
+description: 'În perioada ianuarie - martie 2021 Code For Moldova a realizat o cercetare
+  care și-a propus să descopere cum tinerii își fac alegerea în carieră și care sunt
+  problemele cu, care se confruntă în acest proces. Procesul de cercetare s-a derulat
+  sub umbrela programului Civic Labs pe subiectul Ghidării în Carieră în Republica
+  Moldova și a cuprins discuții cu diferiți actori precum: elevi, studenți, tineri,
+  profesori universitari, experți în domeniu, Centre de Ghidare în Carieră, asociații
+  obștești, instituții de stat, sectorul asociativ cât și cel privat. În procesul
+  de cercetare au fost implicate liceele: Liceul de Creativitate și Inventică “Prometeu-Prim”,
+  Liceul "Spiru Haret", Лицей имени Н. В. Гоголя, Academia de Studii Economice din
+  Moldova și asociația MentorMe.'
 image: "/uploads/2021/05/07/screen-shot-2021-05-07-at-16-07-33.png"
 
 ---
@@ -54,6 +54,4 @@ Pentru a afla mai multe detalii despre cercetare, urmăriți raportul mai jos:
 
 Dorim să menționăm că, Black Sea Trust for Regional Cooperation, prin suportul oferit, a dat viață acestui proiect.
 
-Hai să creăm o Moldovă mai bună, împreună!  
-  
-:::
+Hai să creăm o Moldovă mai bună, împreună!
