@@ -9,14 +9,14 @@ created_date: 2021-04-11T18:23:43.000+00:00
 title: 'Ghidarea în Carieră  '
 description: 'În perioada ianuarie - martie 2021 Code For Moldova a realizat o cercetare
   care și-a propus să descopere cum tinerii își fac alegerea în carieră și care sunt
-  problemele cu, care se confruntă în acest proces. Procesul de cercetare s-a derulat
+  problemele cu care se confruntă în acest proces. Procesul de cercetare s-a derulat
   sub umbrela programului Civic Labs pe subiectul Ghidării în Carieră în Republica
   Moldova și a cuprins discuții cu diferiți actori precum: elevi, studenți, tineri,
   profesori universitari, experți în domeniu, Centre de Ghidare în Carieră, asociații
   obștești, instituții de stat, sectorul asociativ cât și cel privat. În procesul
   de cercetare au fost implicate liceele: Liceul de Creativitate și Inventică “Prometeu-Prim”,
-  Liceul "Spiru Haret", Лицей имени Н. В. Гоголя, Academia de Studii Economice din
-  Moldova și asociația MentorMe.'
+  Liceul "Spiru Haret", Liceul “N.V. Gogol“, Academia de Studii Economice din Moldova
+  și asociația MentorMe.'
 image: "/uploads/2021/05/07/screen-shot-2021-05-07-at-16-07-33.png"
 
 ---
