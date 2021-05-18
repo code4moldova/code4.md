@@ -7,51 +7,33 @@ categories:
 - report
 created_date: 2021-04-11T18:23:43.000+00:00
 title: 'Ghidarea în Carieră  '
-description: 'În perioada ianuarie - martie 2021 Code For Moldova a realizat o cercetare
-  care și-a propus să descopere cum tinerii își fac alegerea în carieră și care sunt
-  problemele cu care se confruntă în acest proces. Procesul de cercetare s-a derulat
-  sub umbrela programului Civic Labs pe subiectul Ghidării în Carieră în Republica
-  Moldova și a cuprins discuții cu diferiți actori precum: elevi, studenți, tineri,
-  profesori universitari, experți în domeniu, Centre de Ghidare în Carieră, asociații
-  obștești, instituții de stat, sectorul asociativ cât și cel privat. În procesul
-  de cercetare au fost implicate liceele: Liceul de Creativitate și Inventică “Prometeu-Prim”,
-  Liceul "Spiru Haret", Liceul “N.V. Gogol“, Academia de Studii Economice din Moldova
-  și asociația MentorMe.'
+description: Code For Moldova a lansat raportul <em>Ghidarea Tinerilor în Carieră</em>
+  care și-a propus să descopere necesitățile și problemele tinerilor și a altor actori
+  implicați în acest proces. Studiul s-a realizat în perioada ianuarie - martie 2021
+  și a cuprins interviuri, sondaje și focus grupuri cu elevi, studenți, reprezentanți
+  ai instituțiilor de învățământ și a sectorului privat și asociativ. Raportul include
+  problemele și lacunele procesului de ghidare în carieră a tinerilor, cât și descrierea
+  conceptelor de soluții digitale, care vin să rezolve aceste probleme.
 image: "/uploads/2021/05/07/screen-shot-2021-05-07-at-16-07-33.png"
 
 ---
-**Probleme și blocaje în procesul de ghidare în carieră**
+Printre blocajele de a face o alegere conștientă în următoarea profesie a tinerilor se numără:
 
-Pe durata procesului de cercetare au fost depistate o serie de probleme și lacune, unele dintre ele sunt:
+1. Părinții își ghidează copiii în selectarea specialității, însă nu cunosc procesul eficient de ghidare în carieră și nu dețin informație actualizată despre piața muncii. Acest proces ar trebui să includă următoarele etape: cunoașterea punctelor forte, alegerea educațională, acumularea experienței, dezvoltarea abilităților și ghidarea în selecția ocupațională. Ignorând identificarea punctelor forte a copilului și informația despre piața muncii, părintele influențează tânărul să aleagă o profesie care nu i se potrivește și nu dezvoltă potențialul său interior.
+2. Elevii și studenții nu cunosc etapele și oportunitățile de ghidare în carieră. Majoritatea liceenilor intervievați au o dificultate în a alege domeniul profesional, pentru că nu cunosc la ce resurse și actori să apeleze pentru suport. Totodată, procesul de ghidare este neclar și necunoscut. Elevii ajung în clasa a XII-a și se întreabă cum ar trebui să decurgă ghidarea și la cine să se adreseze. “Fie eu individual ar trebui să-mi dau seama de preferințele mele sau totuși sunt specialiști care ar putea să mă ajute să conștientizez încotro s-o apuc?”, întreabă o elevă din clasa a XII-a. Astfel, tinerii ajung la majorat fără să-și identifice punctele forte și slabe, preferințele și nu fac o alegere conștientă în următoarea profesie.
+3. Tinerii nu au competențele și abilitățile dezvoltate care sunt în cerere pe piața muncii. Problema are rădăcină atât în sistemul de învățământ care aliniază elevii după un singur mod de învățare: lingvistic verbal, când în general sunt mai mult de 5 tipuri, cât și în lipsa conexiunii cu realitatea pieței muncii. Elevii au o tangență redusă cu experții din sectorul privat și sunt redus implicați în activități extracurriculare, cum ar fi: voluntariat, stagii de practică, joburi part-time, pentru ca să conștientizeze abilitățile necesare de dezvoltat pentru următoarea profesie.
 
-1. Părinții - O problemă depistată este faptul că părinții joacă un rol important pentru elevi în selectarea specialității, însă ei nu posedă abilitățile profesionale pentru a oferi consultanța necesară.
-2. Tinerii - Elevii și studenții nu cunosc cum să se informeze corect în procesul de selectare a unei profesii. La fel, ei nu cunosc despre existența organizațiilor și instituțiilor care îi pot ajuta.
-3. Școlile - S-a sesizat că ghidarea în carieră în școli este redusă astfel încât elevii au parte de puține activități extra-curriculare prin care ar putea să-și găsească pasiunea și înclinarea spre un anumit domeniu.
-4. Universitățile - Un alt blocaj îl constituie faptul că site-urile universităților sunt puțin atractive pentru elevi și greu de navigat. Mai mult decât atât profesorii universitari consideră că ghidarea în carieră nu ține de responsabilitatea lor.
+Soluțiile digitale finale proiectate de organizația Code For Moldova sunt:
 
-**Soluțiile proiectate**
+1. **profesii.md** - platforma care vine să informeaze și să ghideze tinerii în a lua o decizie conștientă în carieră. Această platformă prezintă tinerilor domeniile, subdomeniile profesionale și profesiile existente. Totodată, aceasta include oportunități și pașii exacți de ghidare în carieră.
+2. **mentor.md** - platforma care conectează tinerii dornici de a se dezvolta personal cât și profesional și experții din diverse nișe profesionale care sunt gata să ofere mentorat în domeniul lor de expertiză.
 
-Ca urmare a cercetării, Code For Moldova, a proiectat soluțiile necesare care să vină să rezolve problemele depistate, le-a testat cu utilizatori reali și urmează să le valideze. De asemenea, problemele care pot fi soluționate prin digitalizate au fost considerate de echipa de experți în proiectare și au fost constituite următoarele:
+Până a defini conceptele de soluții, s-au realizat zeci de interviuri și testări cu elevii și studenții. La moment, aceste concepte sunt la etapa de design și urmează să treacă în faza de implementare. Ce este exclusiv pentru Republica Moldova? Este faptul că soluțiile sunt implementate în cod deschis, de către o comunitate de voluntari și sunt gratuite la utilizare.
 
-1. Cariera.md - Platforma care vine să informeaze și să ghideze tinerii în a lua o decizie conștientă în carieră. Această platformă prezintă tinerilor domeniile profesionale și profesiile existente, cât și oportunitățile și pașii exacți în procesul de ghidare în carieră.
-2. Mentor.md - Platforma care își propune să facă legătura dintre tinerii dornici de a se dezvolta personal cât și profesional și experții din diverse nișe profesionale care sunt gata să ofere mentorat în domeniul lor de expertiză.
-3. Expert connect - Soluția care are ca și scop să conecteze profesorii din instituțiile de învățământ cu experții dintr-un domeniu profesional anumit pentru a adăuga componenta practică în universități.
-4. Elev - student connect - Soluția care va conecta elevii cu studenții diverselor instituții de învățământ pentru a se informa despre viața academică și experiența universitară într-o anumită universitate, facultate sau specialitate.
+::pdf\[/uploads/2021/04/29/C4MD_Raport Cercetare_Ghidare in Cariera_2021.pdf\]
 
-**Validarea soluțiilor**
-
-La moment s-au validat primele 2 soluții menționate mai sus: 1. Cariera.md și 2. Mentor.md. După procesul de validare a soluțiilor, Code For Moldova va crea prototipuri funcționale cu ajutorul comunității de voluntari IT.
-
-**Detalii suplimentare**
-
-Pentru mai multe detalii despre platformele ce urmează a fi implementate, urmăriți-ne pe rețelele de socializare sau accesați: [www.code4.md](http://www.code4.md) .
-
-Dacă v-a plăcut una dintre soluțiile proiectate și vreți să participați la implementare, să contribuiți prin coding, comunicare, UX/UI sau prin suport financiar, vedeți detalii aici: [https://code4.md/get-involved](https://code4.md/get-involved "https://code4.md/get-involved") / [https://code4.md/donate](https://code4.md/donate "https://code4.md/donate") .
-
-Pentru a afla mai multe detalii despre cercetare, urmăriți raportul mai jos:
-
-::pdf[/uploads/2021/04/29/C4MD_Raport Cercetare_Ghidare in Cariera_2021.pdf]
-
-Dorim să menționăm că, Black Sea Trust for Regional Cooperation, prin suportul oferit, a dat viață acestui proiect.
-
-Hai să creăm o Moldovă mai bună, împreună!
+Mai multe detalii despre platformele ce urmează a fi implementate, află pe rețelele de socializare sau accesează: [www.code4.md](http://www.code4.md) .Vrei să contribui la implementare sau să susții dezvoltarea prin donație? Accesează: [https://code4.md/get-involved](https://code4.md/get-involved "https://code4.md/get-involved") / [https://code4.md/donate](https://code4.md/donate "https://code4.md/donate")   
+  
+Împreună putem digitaliza Moldova!  
+  
+Acest proiect este realizat cu suportul Black Sea Trust. Partenerii care au susținut procesul de cercetare sunt Liceul de Creativitate și Inventică _Prometeu-Prim_, Liceul _Spiru Haret_,[ ](https://www.facebook.com/%D0%9B%D0%B8%D1%86%D0%B5%D0%B9-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-%D0%9D-%D0%92-%D0%93%D0%BE%D0%B3%D0%BE%D0%BB%D1%8F-341553949630651/?__cft__\[0\]=AZXUb7ccw5DQKmutZH9a4T67JlsCxp1no4o7zRt2NVlUvfhfvuc7NPjPrJLtx-WyF20EvD7rqGekGSInwauiBMM2AD34PSvfr6S7GNoRFodRaTJGHLOlq73_iKFuHvwq3Wsvt-fyBdB1tg6cQCMMa1G-cumTklux7z41xBhh_uGTYQ&__tn__=kK-R)Liceul _Nikolai Gogol_, _Academia de Studii Economice din Moldova_ și Asociația Obștească _Mentor Me_.
