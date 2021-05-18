@@ -30,9 +30,9 @@ Soluțiile digitale finale proiectate de organizația Code For Moldova sunt:
 
 Până a defini conceptele de soluții, s-au realizat zeci de interviuri și testări cu elevii și studenții. La moment, aceste concepte sunt la etapa de design și urmează să treacă în faza de implementare. Ce este exclusiv pentru Republica Moldova? Este faptul că soluțiile sunt implementate în cod deschis, de către o comunitate de voluntari și sunt gratuite la utilizare.
 
-::pdf[/uploads/2021/04/29/C4MD_Raport Cercetare_Ghidare in Cariera_2021.pdf]
+::pdf\[/uploads/2021/04/29/C4MD_Raport Cercetare_Ghidare in Cariera_2021.pdf\]
 
-Mai multe detalii despre platformele ce urmează a fi implementate, află pe rețelele de socializare sau accesează: [www.code4.md](http://www.code4.md) .Vrei să contribui la implementare sau să susții dezvoltarea prin donație? Accesează: [https://code4.md/get-involved](https://code4.md/get-involved "https://code4.md/get-involved") / [https://code4.md/donate](https://code4.md/donate "https://code4.md/donate")
+Mai multe detalii despre platformele ce urmează a fi implementate, află pe rețelele de socializare sau accesează: [www.code4.md](http://www.code4.md) . Vrei să contribui la implementare sau să susții dezvoltarea prin donație? Accesează: [https://code4.md/get-involved](https://code4.md/get-involved "https://code4.md/get-involved") / [https://code4.md/donate](https://code4.md/donate "https://code4.md/donate")
 
 Împreună putem digitaliza Moldova!
 
