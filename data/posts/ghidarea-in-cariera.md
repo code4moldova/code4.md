@@ -7,8 +7,8 @@ categories:
 - report
 created_date: 2021-04-11T18:23:43.000+00:00
 title: 'Ghidarea în Carieră  '
-description: Code For Moldova a lansat raportul <em>Ghidarea Tinerilor în Carieră</em>
-  care și-a propus să descopere necesitățile și problemele tinerilor și a altor actori
+description: Code For Moldova a lansat raportul Ghidarea Tinerilor în Carieră care
+  și-a propus să descopere necesitățile și problemele tinerilor și a altor actori
   implicați în acest proces. Studiul s-a realizat în perioada ianuarie - martie 2021
   și a cuprins interviuri, sondaje și focus grupuri cu elevi, studenți, reprezentanți
   ai instituțiilor de învățământ și a sectorului privat și asociativ. Raportul include
@@ -30,12 +30,10 @@ Soluțiile digitale finale proiectate de organizația Code For Moldova sunt:
 
 Până a defini conceptele de soluții, s-au realizat zeci de interviuri și testări cu elevii și studenții. La moment, aceste concepte sunt la etapa de design și urmează să treacă în faza de implementare. Ce este exclusiv pentru Republica Moldova? Este faptul că soluțiile sunt implementate în cod deschis, de către o comunitate de voluntari și sunt gratuite la utilizare.
 
-::pdf\[/uploads/2021/04/29/C4MD_Raport Cercetare_Ghidare in Cariera_2021.pdf\]
+::pdf[/uploads/2021/04/29/C4MD_Raport Cercetare_Ghidare in Cariera_2021.pdf]
 
- 
+Mai multe detalii despre platformele ce urmează a fi implementate, află pe rețelele de socializare sau accesează: [www.code4.md](http://www.code4.md) .Vrei să contribui la implementare sau să susții dezvoltarea prin donație? Accesează: [https://code4.md/get-involved](https://code4.md/get-involved "https://code4.md/get-involved") / [https://code4.md/donate](https://code4.md/donate "https://code4.md/donate")
 
-Mai multe detalii despre platformele ce urmează a fi implementate, află pe rețelele de socializare sau accesează: [www.code4.md](http://www.code4.md) .Vrei să contribui la implementare sau să susții dezvoltarea prin donație? Accesează: [https://code4.md/get-involved](https://code4.md/get-involved "https://code4.md/get-involved") / [https://code4.md/donate](https://code4.md/donate "https://code4.md/donate")   
-  
-Împreună putem digitaliza Moldova!  
-  
-Acest proiect este realizat cu suportul Black Sea Trust. Partenerii care au susținut procesul de cercetare sunt Liceul de Creativitate și Inventică _Prometeu-Prim_, Liceul _Spiru Haret_,[ ](https://www.facebook.com/%D0%9B%D0%B8%D1%86%D0%B5%D0%B9-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-%D0%9D-%D0%92-%D0%93%D0%BE%D0%B3%D0%BE%D0%BB%D1%8F-341553949630651/?__cft__\[0\]=AZXUb7ccw5DQKmutZH9a4T67JlsCxp1no4o7zRt2NVlUvfhfvuc7NPjPrJLtx-WyF20EvD7rqGekGSInwauiBMM2AD34PSvfr6S7GNoRFodRaTJGHLOlq73_iKFuHvwq3Wsvt-fyBdB1tg6cQCMMa1G-cumTklux7z41xBhh_uGTYQ&__tn__=kK-R)Liceul _Nikolai Gogol_, _Academia de Studii Economice din Moldova_ și Asociația Obștească _Mentor Me_.
+Împreună putem digitaliza Moldova!
+
+Acest proiect este realizat cu suportul Black Sea Trust. Partenerii care au susținut procesul de cercetare sunt Liceul de Creativitate și Inventică _Prometeu-Prim_, Liceul _Spiru Haret_, Liceul _Nikolai Gogol_, _Academia de Studii Economice din Moldova_ și Asociația Obștească _Mentor Me_.
