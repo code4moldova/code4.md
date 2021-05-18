@@ -32,6 +32,8 @@ Până a defini conceptele de soluții, s-au realizat zeci de interviuri și tes
 
 ::pdf\[/uploads/2021/04/29/C4MD_Raport Cercetare_Ghidare in Cariera_2021.pdf\]
 
+ 
+
 Mai multe detalii despre platformele ce urmează a fi implementate, află pe rețelele de socializare sau accesează: [www.code4.md](http://www.code4.md) .Vrei să contribui la implementare sau să susții dezvoltarea prin donație? Accesează: [https://code4.md/get-involved](https://code4.md/get-involved "https://code4.md/get-involved") / [https://code4.md/donate](https://code4.md/donate "https://code4.md/donate")   
   
 Împreună putem digitaliza Moldova!  
