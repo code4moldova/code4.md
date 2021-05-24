@@ -23,19 +23,16 @@ Printre blocajele de a face o alegere conștientă în următoarea profesie a ti
 2. Elevii și studenții nu cunosc etapele și oportunitățile de ghidare în carieră. Majoritatea liceenilor intervievați au o dificultate în a alege domeniul profesional, pentru că nu cunosc la ce resurse și actori să apeleze pentru suport. Totodată, procesul de ghidare este neclar și necunoscut. Elevii ajung în clasa a XII-a și se întreabă cum ar trebui să decurgă ghidarea și la cine să se adreseze. “Fie eu individual ar trebui să-mi dau seama de preferințele mele sau totuși sunt specialiști care ar putea să mă ajute să conștientizez încotro s-o apuc?”, întreabă o elevă din clasa a XII-a. Astfel, tinerii ajung la majorat fără să-și identifice punctele forte și slabe, preferințele și nu fac o alegere conștientă în următoarea profesie.
 3. Tinerii nu au competențele și abilitățile dezvoltate care sunt în cerere pe piața muncii. Problema are rădăcină atât în sistemul de învățământ care aliniază elevii după un singur mod de învățare: lingvistic verbal, când în general sunt mai mult de 5 tipuri, cât și în lipsa conexiunii cu realitatea pieței muncii. Elevii au o tangență redusă cu experții din sectorul privat și sunt redus implicați în activități extracurriculare, cum ar fi: voluntariat, stagii de practică, joburi part-time, pentru ca să conștientizeze abilitățile necesare de dezvoltat pentru următoarea profesie.
 
-
 Soluțiile digitale finale proiectate de organizația Code For Moldova sunt:
 
 1. **profesii.md** - platforma care vine să informeaze și să ghideze tinerii în a lua o decizie conștientă în carieră. Această platformă prezintă tinerilor domeniile, subdomeniile profesionale și profesiile existente. Totodată, aceasta include oportunități și pașii exacți de ghidare în carieră.
 2. **mentor.md** - platforma care conectează tinerii dornici de a se dezvolta personal cât și profesional și experții din diverse nișe profesionale care sunt gata să ofere mentorat în domeniul lor de expertiză.
 
-
 Până a defini conceptele de soluții, s-au realizat zeci de interviuri și testări cu elevii și studenții. La moment, aceste concepte sunt la etapa de design și urmează să treacă în faza de implementare. Ce este exclusiv pentru Republica Moldova? Este faptul că soluțiile sunt implementate în cod deschis, de către o comunitate de voluntari și sunt gratuite la utilizare.
 
 ::pdf[/uploads/2021/04/29/C4MD_Raport Cercetare_Ghidare in Cariera_2021.pdf]
 
-
-Mai multe detalii despre platformele ce urmează a fi implementate, află pe rețelele de socializare sau accesează: [www.code4.md](http://www.code4.md) . Vrei să contribui la implementare sau să susții dezvoltarea prin donație? Accesează: [https://code4.md/get-involved](https://code4.md/get-involved "https://code4.md/get-involved") / [https://code4.md/donate](https://code4.md/donate "https://code4.md/donate")
+Mai multe detalii despre platformele ce urmează a fi implementate, află pe rețelele de socializare sau accesează: [www.code4.md](http://www.code4.md) / [mentorme.md](https://mentorme.md) . Vrei să contribui la implementare sau să susții dezvoltarea prin donație? Accesează: [https://code4.md/get-involved](https://code4.md/get-involved "https://code4.md/get-involved") / [https://code4.md/donate](https://code4.md/donate "https://code4.md/donate")
 
 Împreună putem digitaliza Moldova!
 
