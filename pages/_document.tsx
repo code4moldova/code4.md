@@ -7,7 +7,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
-          <script defer data-domain="code4.md" src="https://plausible.io/js/plausible.js"></script>
+          <script defer src="https://cdn.splitbee.io/sb.js"></script>
         </Head>
         <body>
           <Main />
