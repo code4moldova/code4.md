@@ -30,7 +30,6 @@ fields:
   hidden: true
   default: now
 pages:
-- data/sponsors/aisec.json
 - data/sponsors/diez.json
 - data/sponsors/digital-park.json
 - data/sponsors/dreamups.json
