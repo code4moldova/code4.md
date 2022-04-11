@@ -93,5 +93,6 @@ fields:
   default: now
 pages:
 - data/applications/ajut-md.json
+- data/applications/https-help.kartiero.md.json
 - data/applications/info-c19-md.json
 - data/applications/voluntar-md.json
