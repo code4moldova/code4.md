@@ -7,7 +7,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
-          <script defer src="https://cdn.splitbee.io/sb.js"></script>
         </Head>
         <body>
           <Main />
